@@ -14,9 +14,9 @@ const Hero = () => {
     {
       id: 2,
       imageUrl: "/images/Home/hero2.png",
-      title: "Providing Trusted Cable Solutions Since 1978",
+      title: "Nigeria's First Indigenous Cable Manufacturer ",
       description:
-        "Trusted for over four decades to deliver high-quality cable solutions. From homes to high-rise buildings and national infrastructure, we have been powering progress across the continent with unmatched expertise and innovation.",
+        "MicCom Cables & Wires Ltd has been a trailblazer in the Nigerian manufacturing industry—delivering top-quality electrical cables and wires designed to meet both local and international standards.",
     },
     {
       id: 3,
@@ -77,7 +77,7 @@ const Hero = () => {
                   <h1 className="text-3xl md:text-[56px] font-medium text-white md:leading-[68px] md:mb-[40px] mb-[30px]">
                     {slide.title}
                   </h1>
-                  <p className="text-sm md:text-[16px] md:leading-[24px] text-white/90 max-w-2xl font-medium ">
+                  <p className="text-sm md:text-[16px] text-justify md:leading-[24px] text-white/90 max-w-2xl font-medium ">
                     {slide.description}
                   </p>
                 </div>
@@ -101,8 +101,8 @@ const Hero = () => {
                 <div
                   className={`relative w-[50px] h-[10px] md:w-[120px] md:h-[10px] flex items-center justify-center mt-[10px] ${
                     index === currentSlide
-                      ? "border-r-2 border-b-2 border-l-2 border-[#F8F8F8]"
-                      : "border-r-2 border-b-2 border-l-2 border-[#F8F8F8]/30"
+                      ? "border-r-[2px] border-b-[2px] border-l-[2px] border-[#F8F8F8]"
+                      : "border-r-[2px] border-b-[2px] border-l-[2px] border-[#F8F8F8]/30"
                   }`}
                 >
                   <span

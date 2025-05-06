@@ -5,7 +5,7 @@ const TrainingAndVacancyComponent = () => {
       <section className="mb-12 md:mb-[40px]">
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Training & Development</h2>
         
-        <div className="text-[14px] md:leading-[30px]">
+        <div className="text-[14px] md:leading-[30px] text-justify">
           <p>
             MicCom Cables and Wires Ltd's primary mission is to permit our people to meet their professional and personal goals in the context of providing excellence services, excellence technicality and personal dedication. Our staff are our most important resource as they are responsible for managing all other resources. Developing them and ensuring their commitment are our most compelling human resources task.
           </p>

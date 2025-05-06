@@ -31,7 +31,7 @@ const ContactInformationComponent = () => {
               Contact Information
             </h2>
 
-            <div className="mb-6 md:mb-[34px]">
+            <div className="mb-6 md:mb-[34px] text-justify">
               <h3 className="font-medium md:text-[16px] md:leading-[24px] mb-2 md:mb-[20px]">
                 Location
               </h3>
@@ -46,7 +46,7 @@ const ContactInformationComponent = () => {
               </p>
             </div>
 
-            <div className="mb-6  md:mb-[34px]">
+            <div className="mb-6  md:mb-[34px] text-justify">
               <h3 className="font-medium md:text-[16px] md:leading-[24px] mb-2 md:mb-[20px]">
                 Email
               </h3>
@@ -58,7 +58,7 @@ const ContactInformationComponent = () => {
               </p>
             </div>
 
-            <div className="mb-6 md:mb-[34px]">
+            <div className="mb-6 md:mb-[34px] text-justify">
               <h3 className="font-medium md:text-[16px] md:leading-[24px] mb-2 md:mb-[20px]">
                 Phone Number
               </h3>

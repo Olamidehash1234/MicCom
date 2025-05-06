@@ -6,11 +6,11 @@ export default function GetStartedComponent() {
           <h2 className="text-2xl md:text-[40px] font-medium mb-4 md:mb-[30px]">
             QUALITY POLICY
           </h2>
-          <p className="text-sm md:text-[14px] mb-6 md:mb-[40px] md:leading-[24px] text-lowercase">
+          <p className="text-sm md:text-[14px] mb-6 md:mb-[40px] md:leading-[24px] text-lowercase text-justify">
             it is our policy at <span className="text-[#E25319]"> miccom cables & wires ltd. </span> to produce and
-            deliver quality cables and wires that meet customers' requirments.
+            deliver quality cables and wires that meet customers' requirements.
             we are also committed to complying with the requirement of the <span className="text-[#E25319]"> ISO
-            9001: 2015 standard</span> and to continually improve the efectiveness of
+            9001: 2015 standard</span> and to continually improve the effectiveness of
             our quality management system. we have set measurable objective at
             corporate and departmental level which are reviewed as necessary for
             continual suitability.

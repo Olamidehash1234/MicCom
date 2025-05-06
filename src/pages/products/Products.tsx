@@ -315,7 +315,7 @@ export default function ProductsAccordion(){
                       <th className="text-left pb-[20px] px-4 text-sm font-medium text-[#001D0D]">Application</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#0000004D] justify-between text-justify">
+                  <tbody className="divide-y divide-[#0000004D] justify-between md:text-justify">
                     {section.products.map((item, index) => (
                       <tr key={index}>
                         <td className="py-6 px-4 text-sm text-[#001D0D]">{item.product}</td>

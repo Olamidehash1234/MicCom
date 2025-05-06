@@ -51,7 +51,7 @@ export default function CoreValues() {
     <div>
       <div className="px-4 py-8 md:px-[80px] md:py-[40px]">
         {/* Header */}
-        <div className="mb-6">
+        <div className="mb-6 text-justify">
           <p className="text-[#E25319] md:text-[16px] md:leading-[30px] font-medium text-sm mb-2">
             OUR CORE VALUES
           </p>
@@ -78,7 +78,7 @@ export default function CoreValues() {
               <h3 className="font-medium text-[#001D0D] md:text-[18px] mb-2 md:leading-[30px]">
                 {value.title}
               </h3>
-              <p className="text-[#001D0D] text-sm md:text-[14px] md:leading-[24px]">
+              <p className="text-[#001D0D] text-justify text-sm md:text-[14px] md:leading-[24px]">
                 {value.description}
               </p>
             </div>

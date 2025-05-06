@@ -28,7 +28,7 @@ export default function CompanyProfile() {
       </div>
 
       {/* Company Description */}
-      <div className="mb-12 text-sm md:text-[14px] text-[#001D0D] md:leading-[30px]">
+      <div className="mb-12 text-sm md:text-[14px] text-[#001D0D] md:leading-[30px] text-justify">
         <p className="mb-6 md:mb-[30px]">
           MicCom Cables & Wires Ltd stands as a symbol of innovation, resilience, and excellence in Nigeria's manufacturing landscape. Established in 1978 as the country's first indigenous cable manufacturer, MicCom has grown into a trusted name across West Africa and the wider continent. With a commitment to quality, safety, and global standards, we produce a wide range of high-performance cables that power everything from homes and offices to complex industrial and infrastructure projects. Our legacy is built on decades of expertise, industry-leading technology, and a passion for powering progress—one cable at a time.
         </p>

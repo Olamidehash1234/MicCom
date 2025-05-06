@@ -12,7 +12,7 @@ export default function CorePurpose() {
           <p className="text-[#E25319] font-medium text-sm md:text-[16px] uppercase mb-2 md:leading-[30px] md:mb-[20px]">
             OUR CORE PURPOSE
           </p>
-          <p className="text-green-950 text-lg md:text-[34px] font-medium leading-relaxed md:leading-[48px]">
+          <p className="text-green-950 text-lg md:text-[34px] font-medium leading-relaxed md:leading-[48px] text-justify">
             To provide quality cables & wires that are in conformity with
             international standard, thus contributing to the technological and
             industrial development of Nigeria and the African continent as a

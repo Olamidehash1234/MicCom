@@ -1,9 +1,9 @@
 export default function HeroComponent() {
   return (
-    <div className="relative w-full h-[400px] md:h-[700px] overflow-hidden">
-      <div className="absolute inset-0 w-full h-full pt-[80px]">
+    <div className="relative w-full h-[400px] md:h-[550px] overflow-hidden">
+      <div className="absolute inset-0 w-full h-full pt-[80px] md:pt-[100px]">
         <div
-          className="w-full h-full bg-gray-300"
+          className="w-full h-full bg-gray-300 md:h-[550px]"
           style={{
             backgroundImage: "url('/images/contact/hero.png')",
             backgroundPosition: "center",
