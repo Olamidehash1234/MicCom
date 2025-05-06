@@ -13,7 +13,7 @@ const ProductsHeader = () => {
         <p className="text-sm md:text-[14px] text-[#001D0D] md:max-w-[766px] md:leading-[30px]">
           MicCom Cables and Wires Ltd has been engaged in the manufacturing and
           supply of cables and wires for various projects across Nigeria and
-          Africa as whole. Here are just some of the projects;
+          Africa as whole. Here are just some of the projects;
         </p>
       </div>
 
