@@ -1,0 +1,238 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'unset';
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = 'unset';
+  };
+
+  return (
+    <header className="fixed z-50 w-full bg-white shadow-md max-w-[1800px]">
+      {/* Desktop Navbar */}
+      <div className="relative z-50 bg-white max-w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-[80px] pt-[9px] pb-[9px]">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <div className="flex items-center">
+              <a href="/">
+                <img
+                  src="/icons/miccom.svg"
+                  alt="MicCom Logo"
+                  className="w-[80px] md:w-[109.409px] md:h-[83px]"
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-center space-x-[50px] text-[14px]">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                About Us
+              </NavLink>
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Products
+              </NavLink>
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                to="/quality-assurance"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Quality Assurance
+              </NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Blog & News
+              </NavLink>
+              <NavLink
+                to="/careers"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Careers
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Contact Us
+              </NavLink>
+            </div>
+          </div>
+
+          {/* Request Quote Button */}
+          <div className="hidden md:block">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center pt-[9px] pr-[24px] pb-[9px] pl-[23px] border border-transparent rounded-md shadow-sm text-[14px] font-normal text-[#F8F8F8] bg-[#E25319] hover:bg-orange-700"
+            >
+              Request a Quote
+            </a>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={toggleMenu}
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#001D0D] hover:text-[#E25319] hover:bg-gray-100 focus:outline-none"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isMenuOpen ? (
+                <X className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Menu className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div 
+        className={`md:hidden fixed inset-0 bg-[#F9F3E8] z-40 ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
+        <div className="h-[90vh] flex flex-col items-left justify-center px-6">
+          <NavLink
+            to="/about"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] w-full hover:text-[#E25319]"
+              }`
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/products"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Products
+          </NavLink>
+          <NavLink
+            to="/projects"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/quality-assurance"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Quality Assurance
+          </NavLink>
+          <NavLink
+            to="/blog"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Blog & News
+          </NavLink>
+          <NavLink
+            to="/careers"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Careers
+          </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+              }`
+            }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink
+            to="/quote"
+            onClick={handleLinkClick}
+            className="w-full py-4 text-[18px] font-medium text-white bg-[#E25319] text-center rounded-md"
+          >
+            Request a Quote
+          </NavLink>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
