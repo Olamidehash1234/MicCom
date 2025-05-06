@@ -18,7 +18,7 @@ export default function SocialResponsibilities() {
           </h1>
           
           {/* Main Content */}
-          <div className="text-[#001D0D] text-[14px] md:text-[14px] md:leading-[30px] leading-relaxed">
+          <div className="text-[#001D0D] text-[14px] md:text-[14px] md:leading-[30px] leading-relaxed text-justify">
             <p className="mb-6 max-w-[758px]">
               At MicCom Cables & Wires Ltd, we believe our responsibility extends far beyond manufacturing high-quality cables and 
               wires. As Nigeria's first indigenous cable manufacturing company, we understand the importance of using our platform to 

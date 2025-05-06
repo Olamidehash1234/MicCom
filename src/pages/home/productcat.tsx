@@ -162,7 +162,7 @@ const ProductCategory: React.FC = () => {
                   onMouseEnter={() => handleMouseEnter(index)}
                 >
                   <div
-                    className="transition-colors duration-300"
+                    className="transition-colors duration-300 text-justify"
                     style={{
                       color: activeSection === index ? "#001D0D" : "#001D0D",
                     }}

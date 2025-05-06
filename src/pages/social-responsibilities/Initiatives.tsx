@@ -13,12 +13,12 @@ export default function CSRInitiatives() {
       image: Images.education,
       programs: [
         {
-          title: "MieCom Foundation for Educational Development",
+          title: "MicCom Foundation for Educational Development",
           description:
             "Offers scholarships and bursaries to pupils/primary and post-secondary students across Nigeria, supporting academic excellence and access to education.",
         },
         {
-          title: "MieCom University Funds for Teaching & Research",
+          title: "MicCom University Funds for Teaching & Research",
           description:
             "Supports the development of teaching and research capabilities in Nigerian universities to strengthen higher education outcomes.",
         },
@@ -57,7 +57,7 @@ export default function CSRInitiatives() {
       image: Images.faith,
       programs: [
         {
-          title: "MieCom Foundation for Ecumenism",
+          title: "MicCom Foundation for Ecumenism",
           description:
             "Promotes moral and religious education with a mission to foster values-based development throughout the country.",
         },
@@ -74,7 +74,7 @@ export default function CSRInitiatives() {
       image: Images.health,
       programs: [
         {
-          title: "MieCom Foundation for Cancer Research",
+          title: "MicCom Foundation for Cancer Research",
           description:
             "Focused on empowering individuals and communities to reduce the burden of cancer through awareness, research support, and preventive action.",
         },
@@ -107,7 +107,7 @@ export default function CSRInitiatives() {
 
               <div className="space-y-4">
                 {initiative.programs.map((program, index) => (
-                  <div key={index} className="space-y-1">
+                  <div key={index} className="space-y-1 text-justify">
                     <div className="flex items-start md:items-center mb-2 md:mb-[0px]">
                       <img
                         src="/icons/social/small-star.svg"

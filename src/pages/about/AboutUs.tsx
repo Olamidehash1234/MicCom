@@ -38,7 +38,7 @@ export default function CompanyProfile() {
       <div className="border-[2.5px] border-[#009140] rounded-xl md:rounded-[20px] p-4 md:px-[60px] md:py-[40px] mb-8 relative">
         <h2 className="text-2xl md:text-[40px] md:leading-[50px] text-[#E25319] font-medium mb-6">CEO's Message</h2>
         
-        <div className=" text-[#001D0D] text-sm md:text-[16px] md:leading-[32px]">
+        <div className=" text-[#001D0D] text-justify text-sm md:text-[16px] md:leading-[32px]">
           <p className="mb-4 md:mb-[40px]">
             MicCom Cables and Wires Limited is a quality and customer oriented company with a global vision and reach. The journey of MicCom Cables and Wires Ltd started from very modest beginnings viz., a relatively small house wiring, power cables and conductor manufacturing plant in 1978 and has grown to a facility with over 5,000 MTPA capacities of both Copper & Aluminium in Lagos, Nigeria. MicCom Cables and Wires growth has been sure and steady due to its strong focus on quality in manufacturing process and systems resulting in a satisfied and loyal customer base spread across Nigeria.
           </p>
