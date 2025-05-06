@@ -52,8 +52,8 @@ const BlogHomepageComponent = () => {
       {/* Filter and Search */}
       <div className="flex flex-col md:flex-row justify-between mb-[60px] md:mb-[80px] space-y-4 md:space-y-0">
         <div className="flex items-center space-x-3">
-          <span className="text-sm font-medium">Filter By:</span>
-          <div className="w-[275px] md:w-[500px]">
+          <span className="text-sm font-medium md:text-[20px]">Filter By:</span>
+          <div className="w-[275px] md:w-[550px]">
             <CustomSelectReUse
               options={filterOptions}
               value={selectedFilter}
@@ -63,7 +63,7 @@ const BlogHomepageComponent = () => {
           </div>
         </div>
         
-        <div className="w-full md:w-[500px]">
+        <div className="w-full md:w-[550px]">
           <CustomSearch
             value={searchQuery}
             onChange={setSearchQuery}
@@ -73,11 +73,11 @@ const BlogHomepageComponent = () => {
       </div>
       
       {/* Featured Post */}
-      <div className="w-full h-[300px] md:h-[500px] mb-[40px] md:mb-[40px] relative rounded-[4px] md:rounded-[6px]">
+      <div className="w-full h-[300px] md:h-[500px] mb-[40px] md:mb-[40px] relative md:rounded-[6px]">
         <img 
           src={featuredPost.image} 
           alt={featuredPost.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:rounded-[6px] rounded-[4px]"
         />
         <div className="absolute bottom-0 left-0 w-full p-4 md:p-[40px]">
           <div className="text-white">

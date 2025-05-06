@@ -49,7 +49,7 @@ export default function CoreValues() {
 
   return (
     <div>
-      <div className="px-4 py-8 md:px-[80px] md:py-[40px]">
+      <div className="px-4 py-8 md:px-[80px] md:pt-[0px] md:pb-[40px]">
         {/* Header */}
         <div className="mb-6 text-justify">
           <p className="text-[#E25319] md:text-[16px] md:leading-[30px] font-medium text-sm mb-2">

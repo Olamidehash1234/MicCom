@@ -1,6 +1,6 @@
 const TrainingAndVacancyComponent = () => {
   return (
-    <div className=" py-[40px] px-[16px] md:p-[80px] text-[#001D0D]">
+    <div className=" py-[40px] px-[16px] md:p-[80px] md:pb-[0px] text-[#001D0D]">
       {/* Training & Development Section */}
       <section className="mb-12 md:mb-[40px]">
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Training & Development</h2>

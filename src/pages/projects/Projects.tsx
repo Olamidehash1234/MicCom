@@ -81,7 +81,7 @@ const PartnersShowcaseComponent = () => {
       {/* Grid layout for sections */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* First two sections side by side on medium+ screens */}
-        <div className="bg-white p-4 rounded shadow">
+        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
           <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
             <img 
               src={categories[0].image} 
@@ -99,7 +99,7 @@ const PartnersShowcaseComponent = () => {
           </div>
         </div>
         
-        <div className="bg-white p-4 rounded shadow">
+        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
           <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
             <img 
               src={categories[1].image} 
@@ -118,7 +118,7 @@ const PartnersShowcaseComponent = () => {
         </div>
         
         {/* Second two sections side by side on medium+ screens */}
-        <div className="bg-white p-4 rounded shadow">
+        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
           <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
             <img 
               src={categories[2].image} 
@@ -136,7 +136,7 @@ const PartnersShowcaseComponent = () => {
           </div>
         </div>
         
-        <div className="bg-white p-4 rounded shadow">
+        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
           <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
             <img 
               src={categories[3].image} 
@@ -156,7 +156,7 @@ const PartnersShowcaseComponent = () => {
       </div>
       
       {/* Full width industrial section */}
-      <div className="bg-white p-4 rounded shadow mt-6">
+      <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]   mt-6">
         <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
           <img 
             src={categories[4].image} 

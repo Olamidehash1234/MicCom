@@ -159,7 +159,7 @@ const ContactInformationComponent = () => {
                 <div className="text-left">
                 <button
                   //   onClick={handleSubmit}
-                  className="bg-[#E25319] w-full md:w-auto text-white px-4 py-2 rounded text-[14px] md:text-[16px] md:leading-[24px] hover:bg-orange-600 transition duration-200 md:px-[30px] md:py-[9px]"
+                  className="bg-[#E25319] w-full md:w-auto text-white px-4 py-2 rounded text-[14px] md:text-[14px] md:leading-[24px] hover:bg-orange-600 transition duration-200 md:px-[30px] md:py-[9px]"
                 >
                   Send Message
                 </button>

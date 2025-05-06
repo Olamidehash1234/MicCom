@@ -35,7 +35,7 @@ export default function CompanyProfile() {
       </div>
 
       {/* CEO Message Box */}
-      <div className="border-[2.5px] border-[#009140] rounded-xl md:rounded-[20px] p-4 md:px-[60px] md:py-[40px] mb-8 relative">
+      <div className="border-[2.5px] border-[#009140] rounded-xl md:rounded-[20px] p-4 md:px-[60px] md:py-[40px] mb-8 md:mb-[0px] relative">
         <h2 className="text-2xl md:text-[40px] md:leading-[50px] text-[#E25319] font-medium mb-6">CEO's Message</h2>
         
         <div className=" text-[#001D0D] text-justify text-sm md:text-[16px] md:leading-[32px]">

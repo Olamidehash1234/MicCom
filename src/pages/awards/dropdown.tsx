@@ -78,19 +78,19 @@ export default function AwardsAccordion() {
   ];
 
   return (
-    <div className="p-[16px] md:px-[80px] md:py-[60px]">
-      <div className="divide-y divide-[#0000004D]">
+    <div className="p-[16px] md:px-[80px] md:pb-[0px] md:pt-[0px]">
+      <div className="divide-y divide-[#0000004D] border-b border-[#0000004D]">
         {accordionData.map((section) => (
-          <div key={section.id} className="py-4 md:py-[20px]">
+          <div key={section.id} className=" ">
             <div
               className={`flex justify-between items-center cursor-pointer  ${
                 openSection === section.id
-                  ? "border-b border-[#0000004D] pb-4 md:pb-[20px]"
+                  ? "border-b border-[#0000004D] pb-4 md:pb-[0px]"
                   : ""
               }`}
               onClick={() => toggleSection(section.id)}
             >
-              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px]">
+              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px] py-4  md:pt-[20px] md:pb-[20px]">
                 {section.title}
               </h3>
               <div className="text-[#001D0D] md:pr-[20px]">
@@ -104,7 +104,7 @@ export default function AwardsAccordion() {
 
             {openSection === section.id && section.items.length > 0 && (
               <div className="mt-4 divide-y divide-[#0000004D]">
-                <div className="text-[#001D0D] pl-1 md:pl-[20px] space-y-[20px]">
+                <div className="text-[#001D0D] pl-1 md:pl-[20px] md:pb-[20px] space-y-[20px]">
                   {section.items.map((item, index) => (
                     <div
                       key={index}

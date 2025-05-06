@@ -69,7 +69,7 @@ const CustomSelectReUse: React.FC<CustomSelectProps> = ({
             <li
               key={option.value}
               className={`p-2 cursor-pointer text-black hover:bg-[#E25319] hover:text-[#fff] ${
-                value === option.value ? "bg-Primary text-white" : ""
+                value === option.value ? "bg-[#E25319] text-[#fff]" : ""
               }`}
               onClick={() => handleOptionClick(option.value)}
             >
