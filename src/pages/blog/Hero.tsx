@@ -5,7 +5,7 @@ export default function HeroComponent() {
         <div
           className="w-full h-full bg-gray-300 md:h-[550px]"
           style={{
-            backgroundImage: "url('/images/contact/hero.png')",
+            backgroundImage: "url('/images/Blog/hero.png')",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

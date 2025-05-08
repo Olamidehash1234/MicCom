@@ -95,7 +95,7 @@ const ProductCategory: React.FC = () => {
   };
 
   return (
-    <div className="py-12 md:py-16 relative overflow-hidden">
+    <div className="py-12 md:pb-[150px] md:pt-[80px] relative overflow-hidden">
       <div className="px-[16px] md:px-[80px]">
         {/* Header Section */}
         <div className="absolute left-[15px] -top-[50px] md:left-[33px] md:-top-[20px] z-10">
@@ -113,11 +113,19 @@ const ProductCategory: React.FC = () => {
             Harness the Power of Reliable Cable Solutions with MicCom.
           </h2>
           {/* Copper big image as absolute positioned background */}
-          <div className="absolute -right-[22px] -top-[50px] md:-right-[60px] md:-top-[20px] z-10">
+          <div className="absolute -right-[22px] -top-[30px] md:-right-[60px] md:-top-[20px] z-[5]">
             <img
               src="/icons/home/copper-big.svg"
               alt="Cable Spool"
               className="w-[200px] md:w-[500px] h-auto"
+            />
+          </div>
+
+          <div className="absolute -right-[22px] -bottom-[440px] md:-right-[60px] md:-bottom-[1300px] z-[15]">
+            <img
+              src="/icons/home/copper-big-end.svg"
+              alt="Cable Spool"
+              className="w-[100px] md:w-[250px] h-auto md:m-[px]"
             />
           </div>
         </div>
@@ -139,7 +147,7 @@ const ProductCategory: React.FC = () => {
           <div className="flex-1">
             <div
               ref={scrollContainerRef}
-              className="overflow-y-auto pr-4 md:pr-0 hide-scrollbar h-[400px] md:h-[1020px]"
+              className="overflow-y-auto mt-[50px] md:mt-[0px] pr-4 md:pr-0 hide-scrollbar h-[400px] md:h-[1000px]"
               style={{ scrollBehavior: "smooth" }}
             >
               {products.map((product, index) => (
@@ -182,7 +190,6 @@ const ProductCategory: React.FC = () => {
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </div>

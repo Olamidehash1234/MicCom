@@ -6,7 +6,7 @@ export default function HeroComponent() {
           className="w-full h-full bg-gray-300 md:h-[550px]"
           style={{
             backgroundImage: "url('/images/About/hero.png')",
-            backgroundPosition: "center",
+            // backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}

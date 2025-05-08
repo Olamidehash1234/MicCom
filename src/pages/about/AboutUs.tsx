@@ -20,11 +20,11 @@ export default function CompanyProfile() {
         </h1>
         
         {/* Decorative Stars */}
-        <div className="absolute hidden md:flex right-[252px] -top-[20px] w-32 h-20 md:w-[126px] md:h-[126px]">
+        {/* <div className="absolute hidden md:flex right-[252px] -top-[20px] w-32 h-20 md:w-[126px] md:h-[126px]">
           <img src="/icons/about/star-big1.svg" alt="" />
           <img src="/icons/about/star-big2.svg" alt="" />
           <img src="/icons/about/star-big3.svg" alt="" />
-        </div>
+        </div> */}
       </div>
 
       {/* Company Description */}
