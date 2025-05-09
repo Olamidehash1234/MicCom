@@ -164,8 +164,8 @@ const ProductCategory: React.FC = () => {
                     activeSection === index
                       ? "opacity-100 translate-y-0"
                       : activeSection > index
-                      ? "opacity-40 -translate-y-4"
-                      : "opacity-60 translate-y-4"
+                      ? "opacity-100 -translate-y-4"
+                      : "opacity-50 translate-y-4"
                   } transition-all duration-500 hover:opacity-100 hover:translate-y-0`}
                   onMouseEnter={() => handleMouseEnter(index)}
                 >

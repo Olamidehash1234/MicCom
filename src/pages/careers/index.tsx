@@ -1,14 +1,13 @@
 import HeroComponent from './Hero'
 import Training from './Training' 
-import Quality from '../../pages/products/GetQuality'
-
+import Images from './Images'
 
 const CareersPage = () => {
   return (
     <div>
       <HeroComponent />
       <Training />
-      <Quality />
+      <Images />
     </div>
   );
 };

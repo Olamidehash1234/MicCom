@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="w-full h-px bg-[#00482033] mb-16 md:mb-[60px]"></div>
 
       <div>
-        <div className="grid grid-cols-2 md:grid-cols-none md:flex md:justify-between gap-8 px-[16px] md:px-[80px] mb-[60px] md:mb-[60px] gap-y-[60px]">
+        <div className="grid grid-cols-2 md:grid-cols-none md:flex md:justify-between gap-8 text-[#001D0D] px-[16px] md:px-[80px] mb-[60px] md:mb-[60px] gap-y-[60px]">
           {/* Logo Column */}
           <div className="flex justify-center md:justify-start">
             <div>
@@ -16,22 +16,22 @@ export default function Footer() {
 
           {/* Company Column */}
           <div className="text-left md:text-left">
-            <h3 className="font-medium text-[18px] mb-4 md:mb-[20px]">
+            <h3 className="font-medium text-[#001D0D]  text-[18px] mb-4 md:mb-[20px]">
               Company
             </h3>
             <ul className="space-y-[14px]">
               <li>
-                <a href="/about" className="hover:text-[#E25319] text-[14px]">
+                <a href="/about" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/social-responsibilities" className="hover:text-[#E25319] text-[14px]">
+                <a href="/social-responsibilities" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   Social Responsibility
                 </a>
               </li>
               <li>
-                <a href="/awards" className="hover:text-[#E25319] text-[14px]">
+                <a href="/awards" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   Awards & Certificate
                 </a>
               </li>
@@ -40,22 +40,17 @@ export default function Footer() {
 
           {/* Policies Column */}
           <div className="text-left md:text-left">
-            <h3 className="font-medium text-[18px] mb-4 md:mb-[20px]">
+            <h3 className="font-medium text-[#001D0D]  text-[18px] mb-4 md:mb-[20px]">
               Policies
             </h3>
             <ul className="space-y-[14px]">
               <li>
-                <a href="#hse" className="hover:text-[#E25319] text-[14px]">
-                  HSE Policies
-                </a>
-              </li>
-              <li>
-                <a href="/quality-assurance" className="hover:text-[#E25319] text-[14px]">
+                <a href="/quality-assurance" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   Quality Assurance
                 </a>
               </li>
               <li>
-                <a href="/quality-assurance#product-design" className="hover:text-[#E25319] text-[14px]">
+                <a href="/quality-assurance#product-design" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   Product Design & Testing
                 </a>
               </li>
@@ -64,24 +59,24 @@ export default function Footer() {
 
           {/* Products Column */}
           <div className="text-left lg:text-left">
-            <h3 className="font-medium text-[18px] mb-4 md:mb-[20px]">
+            <h3 className="font-medium text-[#001D0D]  text-[18px] mb-4 md:mb-[20px]">
               Products
             </h3>
             <ul className="space-y-[14px]">
               <li>
-                <a href="/products#copper" className="hover:text-[#E25319] text-[14px]">
+                <a href="/products#copper" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   All Copper Conductor
                 </a>
               </li>
               <li>
-                <a href="/products#cables" className="hover:text-[#E25319] text-[14px]">
+                <a href="/products#cables" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   Single & Multiple Cables
                 </a>
               </li>
               <li>
                 <a
                   href="/products#aluminum"
-                  className="hover:text-[#E25319] text-[14px]"
+                  className="hover:text-[#E25319] text-[#001D0D]  text-[14px]"
                 >
                   All Aluminum Conductor
                 </a>
@@ -89,7 +84,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/products#flexible"
-                  className="hover:text-[#E25319] text-[14px]"
+                  className="hover:text-[#E25319] text-[#001D0D]  text-[14px]"
                 >
                   Flexible Cables
                 </a>
@@ -97,13 +92,13 @@ export default function Footer() {
               <li>
                 <a
                   href="/products#armoured"
-                  className="hover:text-[#E25319] text-[14px]"
+                  className="hover:text-[#E25319] text-[#001D0D]  text-[14px]"
                 >
                   Armoured/Non Armoured Cables
                 </a>
               </li>
               <li>
-                <a href="/products#acsr" className="hover:text-[#E25319] text-[14px]">
+                <a href="/products#acsr" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
                   ACSR
                 </a>
               </li>
@@ -112,7 +107,7 @@ export default function Footer() {
 
           {/* Get In Touch Column */}
           <div className="text-left md:text-left col-span-1 md:col-span-2 lg:col-span-1">
-            <h3 className="font-medium text-[18px] mb-4 md:mb-[20px]">
+            <h3 className="font-medium text-[#001D0D]  text-[18px] mb-4 md:mb-[20px]">
               Get In Touch
             </h3>
             <ul className="space-y-[14px]">
@@ -120,7 +115,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@miccomcables.com"
-                  className="hover:text-[#E25319]"
+                  className="hover:text-[#E25319] text-[#001D0D] "
                 >
                   info@miccomcables.com
                 </a>
@@ -128,7 +123,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:sales@miccomcables.com"
-                  className="hover:text-[#E25319]"
+                  className="hover:text-[#E25319] text-[#001D0D] "
                 >
                   sales@miccomcables.com
                 </a>

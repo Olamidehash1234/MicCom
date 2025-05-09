@@ -3,7 +3,7 @@ import { useState } from "react";
 interface AccordionSection {
   id: "awards" | "certificates" | "son" | "iso" | "permits";
   title: string;
-  items: string[];
+  items: Array<string | { main: string; subItems: string[] }> ;
 }
 
 export default function AwardsAccordion() {
@@ -24,7 +24,7 @@ export default function AwardsAccordion() {
       id: "awards",
       title: "Awards for Quality & Excellence",
       items: [
-        "Gold Medal Award for Quality - Trademarks Publication Corporation, Washington DC",
+        "Gold Medal Award for Quality",
         "International Africa for Quality",
         "International Trophy for Technology",
         "Swiss Gold Award for Quality",
@@ -35,44 +35,43 @@ export default function AwardsAccordion() {
       id: "certificates",
       title: "Certificates of Membership & Recognition",
       items: [
-        "Gold Medal Award for Quality - Trademarks Publication Corporation, Washington DC",
-        "International Africa for Quality",
-        "International Trophy for Technology",
-        "Swiss Gold Award for Quality",
-        "Product Quality Award - Standards Organisation of Nigeria (SON)",
+        "Certificate of Membership – Manufacturers Association of Nigeria (MAN)",
+        "DUNS & BRADSTREET Certificate",
       ],
     },
     {
       id: "son",
       title: "Standards Organisation of Nigeria (SON) Certifications",
       items: [
-        "Gold Medal Award for Quality - Trademarks Publication Corporation, Washington DC",
-        "International Africa for Quality",
-        "International Trophy for Technology",
-        "Swiss Gold Award for Quality",
-        "Product Quality Award - Standards Organisation of Nigeria (SON)",
+        "Certificate of Product Quality – Standards Organisation of Nigeria (SON)",
+        "Certificate of Product Quality (Singles Cables, AAC, Multicore Elect. Cables)",
+        "NIS Certificate on Quality Management System Conformity",
+        "NIS-SON Silver",
+        "NIS-SON Gold Award",
       ],
     },
     {
       id: "iso",
       title: "ISO Quality Management System Certifications",
       items: [
-        "Gold Medal Award for Quality - Trademarks Publication Corporation, Washington DC",
-        "International Africa for Quality",
-        "International Trophy for Technology",
-        "Swiss Gold Award for Quality",
-        "Product Quality Award - Standards Organisation of Nigeria (SON)",
+        "NIS ISO 9002",
+        "NIS ISO 9001:2000",
+        "NIS ISO 9001:2008",
+        "ISO 9001:2015",
       ],
     },
     {
       id: "permits",
       title: "Regulatory & Operational Permits",
       items: [
-        "Gold Medal Award for Quality - Trademarks Publication Corporation, Washington DC",
-        "International Africa for Quality",
-        "International Trophy for Technology",
-        "Swiss Gold Award for Quality",
-        "Product Quality Award - Standards Organisation of Nigeria (SON)",
+        {
+          main: "DPR Permit to Operate As An Oil Industry Service Company:",
+          subItems: [
+            "Specialized Category – DPR/OGISP/20/3398417/N187456 ",
+            "Major Category – DPR/OGISP/20/2672814/N188157",
+          ],
+        },
+        "Nigerian Content Equipment Certificate (NCEC)",
       ],
     },
   ];
@@ -106,12 +105,31 @@ export default function AwardsAccordion() {
               <div className="mt-4 divide-y divide-[#0000004D]">
                 <div className="text-[#001D0D] pl-1 md:pl-[20px] md:pb-[20px] space-y-[20px]">
                   {section.items.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex text-sm md:text-base md:max-w-[522px] md:leading-[26px] "
-                    >
-                      <div className="">•</div>
-                      <div className=" pl-[10px]">{item}</div>
+                    <div key={index}>
+                      {typeof item === "string" ? (
+                        <div className="flex text-sm md:text-base md:max-w-[550px] md:leading-[26px]">
+                          <div>•</div>
+                          <div className="pl-[10px]">{item}</div>
+                        </div>
+                      ) : (
+                        <div className="space-y-2">
+                          <div className="flex text-sm md:text-base md:max-w-[550px] md:leading-[26px]">
+                            <div>•</div>
+                            <div className="pl-[10px]">{item.main}</div>
+                          </div>
+                          <div className="pl-[20px] space-y-2">
+                            {item.subItems.map((subItem, subIndex) => (
+                              <div
+                                key={subIndex}
+                                className="flex text-sm md:text-base md:max-w-[550px] md:leading-[26px]"
+                              >
+                                <div>•</div>
+                                <div className="pl-[10px]">{subItem}</div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>

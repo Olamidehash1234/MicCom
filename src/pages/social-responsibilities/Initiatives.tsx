@@ -47,7 +47,12 @@ export default function CSRInitiatives() {
         {
           title: "Donation of Water Wells",
           description:
-            "Improves access to clean water for households across multiple compounds in various Nigerian areas.",
+            "Improves access to clean water for households across multiple compounds in various Nigerian states."
+        },
+        {
+          title: "Donation of Boreholes",
+          description:
+            "Improves access to clean water for households across multiple compounds in various Nigerian states.",
         },
       ],
     },
@@ -57,7 +62,7 @@ export default function CSRInitiatives() {
       image: Images.faith,
       programs: [
         {
-          title: "MicCom Foundation for Ecumenism",
+          title: "MicCom Foundation for Evangelism",
           description:
             "Promotes moral and religious education with a mission to foster values-based development throughout the country.",
         },

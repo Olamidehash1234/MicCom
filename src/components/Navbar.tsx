@@ -36,7 +36,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-[50px] text-[14px]">
+            <div className="ml-10 flex items-center space-x-[40px] text-[16px]">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>

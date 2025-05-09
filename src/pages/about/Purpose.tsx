@@ -3,7 +3,7 @@ export default function CorePurpose() {
     <div className="pt-8 px-[16px] md:px-[80px]">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-[74px] justify-between">
         {/* Icon on the left */}
-        <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
+        <div className="flex-shrink-0 flex justify-center w-full md:w-[310px]">
           <img src="/icons/about/flower.svg" alt="" />
         </div>
 
@@ -22,7 +22,7 @@ export default function CorePurpose() {
       </div>
 
       {/* Bottom divider */}
-      <div className="w-full h-px bg-[#004820] mt-12 md:mt-[80px] mb-4"></div>
+      {/* <div className="w-full h-px bg-[#004820] mt-12 md:mt-[80px] mb-4"></div> */}
       </div>
   );
 }

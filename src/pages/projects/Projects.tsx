@@ -1,21 +1,21 @@
+import { useState } from "react";
+
 const PartnersShowcaseComponent = () => {
+  const [openSection, setOpenSection] = useState<number | null>(1);
+
+  const toggleSection = (sectionId: number): void => {
+    if (openSection === sectionId) {
+      setOpenSection(null);
+    } else {
+      setOpenSection(sectionId);
+    }
+  };
+
   const categories = [
     {
       id: 1,
-      name: "DISCO",
-      image: "/images/Projects/disco.png",
-      logos: [
-        "/icons/projects/disco/EEDC.svg", 
-        "/icons/projects/disco/ekedc.svg", 
-        "/icons/projects/disco/ikeja.svg", 
-        "/icons/projects/disco/phedc.svg", 
-        
-      ]
-    },
-    {
-      id: 2,
       name: "Government",
-      image: "/images/Projects/GOVERNMENT.png", 
+      // image: "/images/Projects/GOVERNMENT.png", 
       logos: [
         "/icons/projects/government/lseb.svg",
         "/icons/projects/government/ogun.svg",
@@ -25,9 +25,21 @@ const PartnersShowcaseComponent = () => {
       ]
     },
     {
+      id: 2,
+      name: "DISCO",
+      // image: "/images/Projects/disco.png",
+      logos: [
+        "/icons/projects/disco/EEDC.svg", 
+        "/icons/projects/disco/ekedc.svg", 
+        "/icons/projects/disco/ikeja.svg", 
+        "/icons/projects/disco/phedc.svg", 
+        
+      ]
+    },
+    {
       id: 3,
       name: "Institutions",
-      image: "/images/Projects/institution.png",
+      // image: "/images/Projects/institution.png",
       logos: [
         "/icons/projects/institution/abuad.svg", 
         "/icons/projects/institution/CU.svg", 
@@ -41,7 +53,7 @@ const PartnersShowcaseComponent = () => {
     {
       id: 4,
       name: "Oil & Gas",
-      image: "/images/Projects/oil-gas.png",
+      // image: "/images/Projects/oil-gas.png",
       logos: [
         "/icons/projects/oil-gas/behind.svg",
         "/icons/projects/oil-gas/dawo.svg",
@@ -55,7 +67,7 @@ const PartnersShowcaseComponent = () => {
     {
       id: 5,
       name: "Industrial",
-      image: "/images/Projects/industrial.png", // Replace with your actual image path - full width
+      // image: "/images/Projects/industrial.png",
       logos: [
         "/icons/projects/industrial/access.svg",
         "/icons/projects/industrial/berg.svg",
@@ -77,101 +89,56 @@ const PartnersShowcaseComponent = () => {
   ];
 
   return (
-    <div className="px-[16px] py-[40px] md:p-[80px]">
-      {/* Grid layout for sections */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* First two sections side by side on medium+ screens */}
-        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
-          <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
-            <img 
-              src={categories[0].image} 
-              alt={categories[0].name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <p className="text-sm md:text-[22px] md:mb-[24px] md:leading-[36px] font-medium mb-3 text-gray-700">{categories[0].name}</p>
-          <div className="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-[33px]">
-            {categories[0].logos.map((logo, index) => (
-              <div key={`disco-${index}`} className="flex items-center justify-center">
-                <img src={logo} alt={`Partner logo ${index + 1}`} className="max-h-[80px] md:max-h-[120px] max-w-full" />
+    <div className="p-[16px] md:px-[80px] md:py-[60px]">
+      <div className="divide-y divide-[#E25319] border-t border-[#E25319]">
+        {categories.map((category) => (
+          <div key={category.id} className="">
+            <div
+              className={`flex justify-between items-center cursor-pointer ${
+                openSection === category.id ? "border-b border-[#E25319] pb-4 md:pb-[0px]" : ""
+              }`}
+              onClick={() => toggleSection(category.id)}
+            >
+              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px] py-4 md:pt-[20px] md:pb-[20px]">
+                {category.name}
+              </h3>
+              <div className="text-[#001D0D] md:pr-[20px]">
+                {openSection === category.id ? (
+                  <img src="/icons/award/minus.svg" alt="minus" />
+                ) : (
+                  <img src="/icons/award/addition.svg" alt="plus" />
+                )}
               </div>
-            ))}
-          </div>
-        </div>
-        
-        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
-          <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
-            <img 
-              src={categories[1].image} 
-              alt={categories[1].name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <p className="text-sm md:text-[22px] md:mb-[24px] md:leading-[36px] font-medium mb-3 text-gray-700">{categories[1].name}</p>
-          <div className="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-[33px]">
-            {categories[1].logos.map((logo, index) => (
-              <div key={`substation-${index}`} className="flex items-center justify-center">
-                <img src={logo} alt={`Partner logo ${index + 1}`} className="max-h-[80px] md:max-h-[120px] max-w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-        
-        {/* Second two sections side by side on medium+ screens */}
-        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
-          <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
-            <img 
-              src={categories[2].image} 
-              alt={categories[2].name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <p className="text-sm md:text-[22px] md:mb-[24px] md:leading-[36px] font-medium mb-3 text-gray-700">{categories[2].name}</p>
-          <div className="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-[33px]">
-            {categories[2].logos.map((logo, index) => (
-              <div key={`distribution-${index}`} className="flex items-center justify-center">
-                <img src={logo} alt={`Partner logo ${index + 1}`} className="max-h-[80px] md:max-h-[120px] max-w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-        
-        <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]  ">
-          <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
-            <img 
-              src={categories[3].image} 
-              alt={categories[3].name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <p className="text-sm md:text-[22px] md:mb-[24px] md:leading-[36px] font-medium mb-3 text-gray-700">{categories[3].name}</p>
-          <div className="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-[33px]">
-            {categories[3].logos.map((logo, index) => (
-              <div key={`oil-gas-${index}`} className="flex items-center justify-center">
-                <img src={logo} alt={`Partner logo ${index + 1}`} className="max-h-[80px] md:max-h-[120px] max-w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      
-      {/* Full width industrial section */}
-      <div className="bg-[#FFFAF0] p-4  rounded border-[1px] border-[#0000001A]   mt-6">
-        <div className="h-40 md:h-[232px] mb-4 overflow-hidden">
-          <img 
-            src={categories[4].image} 
-            alt={categories[4].name}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <p className="text-sm md:text-[22px] md:leading-[36px] font-medium md:mb-[24px] mb-3 text-gray-700">{categories[4].name}</p>
-        <div className="grid grid-cols-5 md:grid-cols-10 gap-4 md:gap-[40px]">
-          {categories[4].logos.map((logo, index) => (
-            <div key={`industrial-${index}`} className="flex items-center justify-center">
-              <img src={logo} alt={`Partner logo ${index + 1}`} className="max-h-[80px] md:max-h-[120px] max-w-full" />
             </div>
-          ))}
-        </div>
+
+            {openSection === category.id && (
+              <div className="mt-4 pb-6">
+                {/* <div className="h-40 md:h-[232px] mb-6 overflow-hidden rounded">
+                  <img 
+                    src={category.image} 
+                    alt={category.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div> */}
+                <div className={`grid ${
+                  category.id === 5 
+                    ? "grid-cols-5 md:grid-cols-8" 
+                    : "grid-cols-4 md:grid-cols-8"
+                } gap-4 md:gap-[60px]`}>
+                  {category.logos.map((logo, index) => (
+                    <div key={`${category.name}-${index}`} className="flex items-center">
+                      <img 
+                        src={logo} 
+                        alt={`Partner logo ${index + 1}`} 
+                        className=""
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

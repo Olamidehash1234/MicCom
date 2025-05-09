@@ -16,7 +16,7 @@ const ProductsHeader = () => {
 
       <div className="mt-6 flex-shrink-0 md:flex md:justify-center md:w-auto w-full flex justify-center">
         <div className="md:w-auto md:h-auto">
-          <img src="/icons/product/poll.svg" alt="" />
+          <img src="/icons/product/cable.svg" alt="" />
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ export default function SocialResponsibilities() {
         
         {/* Cable Image/Icon */}
         <div className="mt-8 lg:mt-0 flex justify-center lg:justify-end">
-          <img src="/images/social-responsibilities/cables.svg" alt="" />
+          <img src="/icons/social/cables.svg" alt="" />
         </div>
       </div>
     </div>

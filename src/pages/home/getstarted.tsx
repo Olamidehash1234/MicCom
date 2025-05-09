@@ -6,7 +6,7 @@ export default function GetStartedComponent() {
           <h2 className="text-2xl md:text-[40px] font-medium mb-4 md:mb-[30px]">
             Ready to get started with MicCom?
           </h2>
-          <p className="text-sm md:text-[14px] md:text-justify mb-6 md:mb-[40px] md:leading-[24px]">
+          <p className="text-sm md:text-[16px] md:text-justify mb-6 md:mb-[40px] md:leading-[24px]">
           Whether you're powering a home, a commercial project, or a large-scale infrastructure development, MicCom Cables & Wires Ltd is equipped to deliver the high-performance solutions you need. Reach out to our team today to discuss your requirements, request a quote, or learn more about how we can support your next project.
           </p>
           <button className="w-full md:w-auto bg-[#E25319] hover:bg-orange-600 text-white font-medium py-2 px-6 md:px-[54px] md:py-[9px] md:leading-[26px] md:text-[14px] rounded-md transition-colors duration-300">

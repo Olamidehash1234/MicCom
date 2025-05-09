@@ -1,6 +1,6 @@
 const TrainingAndVacancyComponent = () => {
   return (
-    <div className=" py-[40px] px-[16px] md:p-[80px] md:pb-[0px] text-[#001D0D]">
+    <div className=" py-[40px] px-[16px] md:p-[80px] text-[#001D0D]">
       {/* Training & Development Section */}
       <section className="mb-12 md:mb-[40px]">
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Training & Development</h2>
@@ -25,7 +25,7 @@ const TrainingAndVacancyComponent = () => {
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Vacancy</h2>
         
         <p className="text-[14px] md:leading-[30px]">
-          MicCom Cables and Wires Ltd is always on the look out for dynamic, forward thinking and innovative minds, to service our various department. However we have very strong core values that we imbibe. If you have these qualities, submit your CV to admin@miccomcables.com
+          MicCom Cables and Wires Ltd is always on the look out for dynamic, forward thinking and innovative minds, to service our various department. However we have very strong core values that we imbibe. If you have these qualities, submit your CV to <span className="cursor-pointer underline text-[#E25319]"><a href="mailto:info@miccomcables.com">info@miccomcables.com </a> </span>
         </p>
       </section>
     </div>

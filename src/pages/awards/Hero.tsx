@@ -21,7 +21,7 @@ export default function HeroComponent() {
       <div className="absolute inset-0 flex flex-col md:mt-[40px] justify-center px-[16px] sm:px-12 md:px-[80px]">
         <div className="">
           <h1 className=" mt-[80px] md:mt-[30px] text-white font-medium text-[36px] md:text-[56px] leading-tight md:leading-[68px]">
-          Awards and Certification
+          Awards and Certificates
           </h1>
         </div>
       </div>
