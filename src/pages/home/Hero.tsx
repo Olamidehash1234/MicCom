@@ -67,7 +67,7 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
               {/* Dark overlay */}
-              <div className="absolute inset-0 bg-[#0000008C]"></div>
+              <div className="absolute inset-0 bg-[#00000066]"></div>
             </div>
 
             {/* Text Content */}
@@ -120,14 +120,20 @@ const Hero = () => {
           <div className="flex items-center gap-[10px]">
             <button
               onClick={prevSlide}
-              className="rounded-full flex items-center justify-center transition-colors rotate-180"
+              className={`rounded-full flex items-center justify-center transition-colors rotate-180 ${
+                currentSlide === 0 ? "opacity-30 cursor-not-allowed" : ""
+              }`}
+              disabled={currentSlide === 0}
               aria-label="Previous slide"
             >
               <img src="/icons/home/arrow-right.svg" alt="Previous" />
             </button>
             <button
               onClick={nextSlide}
-              className="rounded-full flex items-center justify-center transition-colors"
+              className={`rounded-full flex items-center justify-center transition-colors ${
+                currentSlide === slides.length - 1 ? "opacity-30 cursor-not-allowed" : ""
+              }`}
+              disabled={currentSlide === slides.length - 1}
               aria-label="Next slide"
             >
               <img src="/icons/home/arrow-right.svg" alt="Next" />

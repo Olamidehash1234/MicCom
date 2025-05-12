@@ -21,17 +21,15 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Prevent body scroll when menu is open
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'unset';
+    // Remove scroll lock
   };
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
-    document.body.style.overflow = 'unset';
   };
 
   return (
-    <header className={`w-full bg-white shadow-md max-w-[1800px] transition-all duration-300 ${
+    <header className={`w-full bg-white shadow-md transition-all duration-300 ${
       isScrolled ? 'fixed top-0 z-50' : 'relative'
     }`}>
       {/* Desktop Navbar */}
@@ -50,8 +48,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          {/* Desktop Navigation - change from md to xl */}
+          <div className="hidden xl:block">
             <div className="ml-10 flex items-center space-x-[40px] text-[16px]">
               <NavLink
                 to="/about"
@@ -126,8 +124,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Request Quote Button */}
-          <div className="hidden md:block">
+          {/* Request Quote Button - change from md to xl */}
+          <div className="hidden xl:block">
             <a
               href="#"
               className="inline-flex items-center justify-center pt-[9px] pr-[24px] pb-[9px] pl-[23px] border border-transparent rounded-md shadow-sm text-[14px] font-normal text-[#F8F8F8] bg-[#E25319] hover:bg-orange-700"
@@ -136,8 +134,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile menu button - change from md to xl */}
+          <div className="xl:hidden flex items-center">
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-[#001D0D] hover:text-[#E25319] hover:bg-gray-100 focus:outline-none"
@@ -154,13 +152,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - updated styles */}
       <div 
-        className={`md:hidden fixed inset-0 bg-[#F9F3E8] z-40 ${
+        className={`xl:hidden fixed inset-0 bg-[#F9F3E8] z-30 overflow-y-auto ${
           isMenuOpen ? "block" : "hidden"
         }`}
+        style={{ top: '75px' }} // Adjust based on navbar height
       >
-        <div className="h-[90vh] flex flex-col items-left justify-center px-6">
+        <div className="min-h-screen py-20 pt-[20px] flex flex-col items-left px-[16px]">
           <NavLink
             to="/about"
             onClick={handleLinkClick}
