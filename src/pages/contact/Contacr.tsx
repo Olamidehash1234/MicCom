@@ -80,7 +80,8 @@ const ContactInformationComponent = () => {
                 Have Any Enquiries?
               </h2>
               <p className="text-[14px] md:text-[14px] md:leading-[24px] mb-4 md:mb-[40px]">
-                Kindly fill the form below and we'll reach out within 24hrs.
+                Kindly fill the form below and we’ll reach out as soon as
+                possible.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[80px] mb-[20px] md:mb-[50px]">

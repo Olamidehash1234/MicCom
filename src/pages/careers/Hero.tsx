@@ -1,9 +1,9 @@
 export default function HeroComponent() {
   return (
-    <div className="relative w-full h-[400px] md:h-[550px] overflow-hidden">
-      <div className="absolute inset-0 w-full h-full pt-[80px] md:pt-[100px]">
+    <div className="relative w-full h-[300px] md:h-[500px] overflow-hidden">
+      <div className="absolute inset-0 w-full h-full">
         <div
-          className="w-full h-full bg-gray-300 md:h-[550px]"
+          className="w-full h-full bg-gray-300 md:h-[500px]"
           style={{
             backgroundImage: "url('/images/career/hero.png')",
             backgroundPosition: "center",
@@ -18,10 +18,10 @@ export default function HeroComponent() {
       <div className="absolute inset-0 bg-[#00000080] bg-opacity-40"></div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col md:mt-[40px] justify-center px-[16px] md:px-[80px]">
+      <div className="absolute inset-0 flex flex-col justify-center px-[16px] md:px-[80px]">
         <div className="">
-          <h1 className=" mt-[60px] text-white font-medium text-[24px] md:text-[56px] leading-tight md:leading-[68px]">
-            Career
+          <h1 className="text-white font-medium text-[24px] md:text-[56px] leading-tight md:leading-[68px]">
+            Careers
           </h1>
         </div>
       </div>

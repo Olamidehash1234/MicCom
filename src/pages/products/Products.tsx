@@ -280,13 +280,13 @@ export default function ProductsAccordion(){
   ];
 
   return (
-    <div className="p-[16px] md:px-[80px] md:py-[60px]">
+    <div className="p-[16px] md:px-[80px] md:pb-[60px]">
       <div className="divide-y divide-[#0000004D] mx-auto border-b border-[#0000004D]">
         {productData.map((section) => (
           <div 
             key={section.id} 
             id={section.id}
-            className="py-4 md:py-[20px] scroll-mt-32 " // Add scroll margin to account for fixed header
+            className="py-4 scroll-mt-32 " // Add scroll margin to account for fixed header
           >
             <div
               className={`flex justify-between items-center cursor-pointer  ${

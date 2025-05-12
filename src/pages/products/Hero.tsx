@@ -1,7 +1,7 @@
 export default function HeroComponent() {
     return (
-      <div className="relative w-full h-[400px] md:h-[550px] overflow-hidden">
-      <div className="absolute inset-0 w-full h-full pt-[80px] md:pt-[100px]">
+      <div className="relative w-full h-[300px] md:h-[550px] overflow-hidden">
+      <div className="absolute inset-0 w-full h-full md:pt-[0px]">
         <div
           className="w-full h-full bg-gray-300 md:h-[550px]"
             style={{
@@ -18,9 +18,9 @@ export default function HeroComponent() {
         <div className="absolute inset-0 bg-[#00000080] bg-opacity-40"></div>
   
         {/* Text Content */}
-        <div className="absolute inset-0 flex flex-col md:mt-[40px] justify-center px-[16px] md:px-[80px]">
+        <div className="absolute inset-0 flex flex-col   justify-center px-[16px] md:px-[80px]">
           <div className="">
-            <h1 className="text-white font-medium text-3xl md:text-[56px] leading-tight mt-[80px] md:mt-[30px] md:leading-[68px]">
+            <h1 className="text-white font-medium text-3xl md:text-[56px] leading-tight md:mt-[30px] md:leading-[68px]">
             Products
             </h1>
           </div>

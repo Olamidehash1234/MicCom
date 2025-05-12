@@ -115,7 +115,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@miccomcables.com"
-                  className="hover:text-[#E25319] text-[#001D0D] "
+                  className="hover:text-[#E25319] text-[#001D0D] hover:underline "
                 >
                   info@miccomcables.com
                 </a>
@@ -123,7 +123,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:sales@miccomcables.com"
-                  className="hover:text-[#E25319] text-[#001D0D] "
+                  className="hover:text-[#E25319] text-[#001D0D] hover:underline "
                 >
                   sales@miccomcables.com
                 </a>

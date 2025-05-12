@@ -1,9 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,9 +31,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed z-50 w-full bg-white shadow-md max-w-[1800px]">
+    <header className={`w-full bg-white shadow-md max-w-[1800px] transition-all duration-300 ${
+      isScrolled ? 'fixed top-0 z-50' : 'relative'
+    }`}>
       {/* Desktop Navbar */}
-      <div className="relative z-50 bg-white max-w-full px-4 sm:px-6 md:px-12 lg:px-20 xl:px-[80px] pt-[9px] pb-[9px]">
+      <div className="relative z-50 bg-white max-w-full px-4 md:px-[80px] pt-[9px] pb-[9px]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">

@@ -77,13 +77,13 @@ const PartnersShowcaseComponent = () => {
         "/icons/projects/industrial/honeywell.svg",
         "/icons/projects/industrial/kinetic.svg",
         "/icons/projects/industrial/me.svg",
-        "/icons/projects/industrial/lubell.svg",
         "/icons/projects/industrial/mar.svg",
         "/icons/projects/industrial/orritech.svg",
         "/icons/projects/industrial/ramit.svg",
         "/icons/projects/industrial/tofa.svg",
         "/icons/projects/industrial/vacc.svg",
-        "/icons/projects/industrial/kenol.svg",  
+        "/icons/projects/industrial/kenol.svg",
+        "icons/projects/industrial/lubell.svg",  
       ]
     }
   ];
@@ -124,13 +124,13 @@ const PartnersShowcaseComponent = () => {
                   category.id === 5 
                     ? "grid-cols-5 md:grid-cols-8" 
                     : "grid-cols-4 md:grid-cols-8"
-                } gap-4 md:gap-[60px]`}>
+                } gap-4 md:gap-x-[60px] md:gap-y-[30px]`}>
                   {category.logos.map((logo, index) => (
-                    <div key={`${category.name}-${index}`} className="flex items-center">
+                    <div key={`${category.name}-${index}`} className="flex items-center justify-center">
                       <img 
                         src={logo} 
                         alt={`Partner logo ${index + 1}`} 
-                        className=""
+                        className="w-[80px] h-[80px] md:w-auto md:h-auto object-contain"
                       />
                     </div>
                   ))}

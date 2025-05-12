@@ -120,14 +120,14 @@ const Hero = () => {
           <div className="flex items-center gap-[10px]">
             <button
               onClick={prevSlide}
-              className="rounded-full hover:bg-white/20 flex items-center justify-center transition-colors rotate-180"
+              className="rounded-full flex items-center justify-center transition-colors rotate-180"
               aria-label="Previous slide"
             >
               <img src="/icons/home/arrow-right.svg" alt="Previous" />
             </button>
             <button
               onClick={nextSlide}
-              className="rounded-full hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="rounded-full flex items-center justify-center transition-colors"
               aria-label="Next slide"
             >
               <img src="/icons/home/arrow-right.svg" alt="Next" />

@@ -5,7 +5,7 @@ const ProductInfoComponent = () => {
       id="product-design"
     >
       {/* Product Design & Testing Section */}
-      <h2 className="text-[22px] md:text-[22px] font-medium mb-4 md:mb-[40px] md:leading-[50px]">
+      <h2 className="text-[22px] md:text-[22px] font-medium mb-4 md:mb-[20px] md:leading-[50px]">
         Product Design & Testing
       </h2>
 
@@ -97,18 +97,22 @@ const ProductInfoComponent = () => {
             </h2>
             <p className="text-sm md:text-[14px] mb-6 md:mb-[40px] md:leading-[24px] text-lowercase text-justify">
               It IS OUR POLICY AT{" "}
-              <span className="font-[700] uppercase">
+              <span className="font-[700] uppercase text-[#E25319]">
                 MicCom Cables & Wires Ltd
               </span>{" "}
               TO PRODUCE AND DELIVER QUALITY CABLES AND WIRES THAT MEET
               CUSTOMERS' REQUIRMENTS. We ARE ALSO COMMITTED TO COMPLYING WITH
-              THE REQUIREMENT OF THE ISO 9001: 2015 STANDARD AND TO CONTINUALLY
-              IMPROVE THE EFECTIVENESS OF OUR QUALITY MANAGEMENT SYSTEM. WE HAVE
-              SET MEASURABLE OBJECTIVE AT CORPORATE AND DEPARTMENTAL LEVEL WHICH
-              ARE REVIEWED AS NECESSARY FOR CONTINUAL SUITABILITY.
+              THE REQUIREMENT OF THE{" "}
+              <span className="font-[700] uppercase text-[#E25319]">
+                ISO 9001: 2015{" "}
+              </span>
+              STANDARD AND TO CONTINUALLY IMPROVE THE EFECTIVENESS OF OUR
+              QUALITY MANAGEMENT SYSTEM. WE HAVE SET MEASURABLE OBJECTIVE AT
+              CORPORATE AND DEPARTMENTAL LEVEL WHICH ARE REVIEWED AS NECESSARY
+              FOR CONTINUAL SUITABILITY.
             </p>
             <button className="w-full md:w-auto bg-[#E25319] hover:bg-orange-600 text-white font-medium py-2 px-6 md:px-[54px] md:py-[9px] md:leading-[26px] md:text-[14px] rounded-md transition-colors duration-300">
-              Download Bronchure
+              Download Brochure
             </button>
           </div>
         </div>
@@ -121,7 +125,7 @@ const ProductInfoComponent = () => {
       </div>
 
       {/* Health Safety and Environment */}
-      <h2 className="text-[22px] md:text-[22px] font-medium mb-4 md:mb-[40px] md:leading-[50px]">
+      <h2 className="text-[22px] md:text-[22px] font-medium mb-4 md:mb-[20px] md:leading-[50px]">
         Health Safety and Environment
       </h2>
 

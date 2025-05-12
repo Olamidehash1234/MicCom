@@ -20,7 +20,7 @@ export default function CompanyProfile() {
         </h1>
         
         {/* Decorative Stars */}
-        <div className="absolute hidden md:flex right-[0px] -top-[10px] w-32 h-20 md:w-[550px] md:h-[126px]">
+        <div className="absolute hidden md:flex right-[-70px] -top-[10px] w-32 h-20 md:w-[660px] md:h-[126px]">
           <img src="/icons/about/bundles.svg" alt="" />
         </div>
       </div>
