@@ -125,7 +125,7 @@ const ProductInfoComponent = () => {
       </div>
 
       {/* Health Safety and Environment */}
-      <h2 className="text-[22px] md:text-[22px] font-medium mb-4 md:mb-[20px] md:leading-[50px]">
+      <h2 className="text-[22px] md:text-[22px] pt-[20px] md:pt-[0px] font-medium mb-4 md:mb-[20px] md:leading-[50px]">
         Health Safety and Environment
       </h2>
 
