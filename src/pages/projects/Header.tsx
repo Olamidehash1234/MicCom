@@ -1,6 +1,6 @@
 const ProductsHeader = () => {
   return (
-    <div className="w-full  px-[16px] md:px-[80px] py-8 md:py-[80px] flex flex-col md:flex-row items-start md:items-center justify-between">
+    <div className="w-full  px-[16px] md:px-[80px] py-8 md:py-[60px] flex flex-col md:flex-row items-start md:items-center justify-between">
       <div className="">
         <div className="mb-2 md:mb-[10px]">
           <p className="text-[#E25319] font-medium text-[14px] md:text-[16px] uppercase tracking-wide md:leading-[30px]">
@@ -17,7 +17,7 @@ const ProductsHeader = () => {
         </p>
       </div>
 
-      <div className="mt-6 flex-shrink-0 md:flex md:justify-center md:w-auto w-full flex justify-center">
+      <div className="mt-6 md:mt-[0px] flex-shrink-0 md:flex md:justify-center md:w-auto w-full flex justify-center">
         <div className="md:w-auto md:h-auto">
           <img src="/icons/product/poll.svg" alt="" />
         </div>

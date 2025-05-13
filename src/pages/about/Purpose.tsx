@@ -1,6 +1,6 @@
 export default function CorePurpose() {
   return (
-    <div className="pt-8 px-[16px] md:px-[80px]">
+    <div className="pt-8 px-[16px] md:pt-[0px] md:px-[80px]">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-[74px] justify-between">
         {/* Icon on the left */}
         <div className="flex-shrink-0 flex justify-center w-full md:w-[310px]">

@@ -42,11 +42,11 @@ const PartnersShowcaseComponent = () => {
       // image: "/images/Projects/institution.png",
       logos: [
         "/icons/projects/institution/abuad.svg", 
+        "/icons/projects/institution/oopl.svg", 
+        "/icons/projects/institution/redeemers.png", 
         "/icons/projects/institution/CU.svg", 
         "/icons/projects/institution/DP.svg", 
         "/icons/projects/institution/mfm.svg", 
-        "/icons/projects/institution/oopl.svg", 
-        "/icons/projects/institution/redeem.svg", 
         "/icons/projects/institution/winners.svg", 
       ]
     },
@@ -89,7 +89,7 @@ const PartnersShowcaseComponent = () => {
   ];
 
   return (
-    <div className="p-[16px] md:px-[80px] md:py-[60px]">
+    <div className="p-[16px] md:px-[80px] md:pb-[0px]">
       <div className="divide-y divide-[#E25319] border-t border-[#E25319]">
         {categories.map((category) => (
           <div key={category.id} className="">
@@ -99,7 +99,7 @@ const PartnersShowcaseComponent = () => {
               }`}
               onClick={() => toggleSection(category.id)}
             >
-              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px] py-4 md:pt-[10px] md:pb-[10px]">
+              <h3 className="text-[#001D0D] font-medium text-lg md:text-[18px] md:leading-[36px] md:pl-[10px] py-4 md:pt-[10px] md:pb-[10px]">
                 {category.name}
               </h3>
               <div className="text-[#001D0D] md:pr-[20px]">
@@ -113,24 +113,17 @@ const PartnersShowcaseComponent = () => {
 
             {openSection === category.id && (
               <div className="mt-4 pb-6">
-                {/* <div className="h-40 md:h-[232px] mb-6 overflow-hidden rounded">
-                  <img 
-                    src={category.image} 
-                    alt={category.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div> */}
-                <div className={`grid ${
+                <div className={`grid  ${
                   category.id === 5 
                     ? "grid-cols-5 md:grid-cols-8" 
-                    : "grid-cols-4 md:grid-cols-8"
+                    : "grid-cols-4 md:grid-cols-6"
                 } gap-4 md:gap-x-[60px] md:gap-y-[30px]`}>
                   {category.logos.map((logo, index) => (
                     <div key={`${category.name}-${index}`} className="flex items-center justify-center">
                       <img 
                         src={logo} 
                         alt={`Partner logo ${index + 1}`} 
-                        className="w-[80px] h-[80px] md:w-auto md:h-auto object-contain"
+                        className="w-auto h-auto md:w-auto md:h-auto object-contain"
                       />
                     </div>
                   ))}

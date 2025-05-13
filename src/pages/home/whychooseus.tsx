@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="flex flex-col p-[30px] md:p-[30px] rounded-lg border-[1px] border-[#E25319] bg-[#FFF8EF] transition-all duration-300 hover:bg-[#E25319] group"
+              className="flex flex-col p-[30px] md:p-[30px] rounded-lg border-[1px] border-[#E25319] bg-[#F9F3E8] transition-all duration-300 hover:bg-[#E25319] group"
             >
               <div className="mb-6 md:mb-[50px]">
                 <img

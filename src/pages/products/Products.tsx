@@ -280,7 +280,7 @@ export default function ProductsAccordion(){
   ];
 
   return (
-    <div className="p-[16px] md:px-[80px] md:pb-[60px]">
+    <div className="p-[16px] md:pt-[0px] md:px-[80px] md:pb-[0px]">
       <div className="divide-y divide-[#0000004D] mx-auto border-b border-[#0000004D]">
         {productData.map((section) => (
           <div 

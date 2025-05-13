@@ -5,11 +5,11 @@ export default function AwardsAndCertification() {
         <div className="md:max-w-[758px]">
           {/* Header Navigation */}
           <div className="flex items-center space-x-2 mb-6 md:mb-[10px] text-sm md:text-base">
-            <span className="text-[#E25319] font-medium">AWARDS</span>
+            <span className="text-[#E25319] font-medium">COMPANY</span>
             <span className="text-[#E25319] flex items-center justify-center">
               <img src="/icons/about/star.svg" alt="" />
             </span>
-            <span className="text-[#E25319] font-medium">AND CERTIFICATION</span>
+            <span className="text-[#E25319] font-medium">AWARDS AND CERTIFICATES</span>
           </div>
           
           {/* Main Heading */}

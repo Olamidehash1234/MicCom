@@ -40,7 +40,7 @@ const CustomSelectReUse: React.FC<CustomSelectProps> = ({
     <div className="relative w-full" ref={selectRef}>
       {/* Select Input */}
       <div
-        className={`border rounded p-[10px] md:px-[20px] md:py-[10px] cursor-pointer flex justify-between items-center md:max-w-[500px] ${
+        className={`border rounded p-[10px] md:px-[20px] md:py-[10px] cursor-pointer flex justify-between items-center ${
           error ? "border-red-500" : "border-[#D9D9D9]"
         }`}
         onClick={toggleDropdown}

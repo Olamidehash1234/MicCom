@@ -1,6 +1,6 @@
 export default function CompanyProfile() {
   return (
-    <div className="p-4 px-[16px] md:p-[80px]">
+    <div className="p-4 px-[16px] md:px-[80px] md:py-[60px]">
       {/* Header Navigation */}
       <div className="flex justify-between items-center mb-[20px] md:mb-[10px]">
         <div className="flex items-center space-x-2 text-[#E25319] md:leading-[30px] text-[14px] md:text-[16px] font-medium">
@@ -13,15 +13,18 @@ export default function CompanyProfile() {
       </div>
 
       {/* Main Heading */}
-      <div className="relative mb-8 md:mb-[30px]">
-        <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] leading-tight">
+      <div className="relative mb-8 md:mb-[30px] flex flex-col md:flex-row justify-between items-center">
+        <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] leading-tight max-w-[600px]">
           Pioneering Cable Manufacturing<br />
           Excellence in Nigeria and Beyond
         </h1>
         
-        {/* Decorative Stars */}
-        <div className="absolute hidden md:flex right-[-70px] -top-[10px] w-32 h-20 md:w-[660px] md:h-[126px]">
-          <img src="/icons/about/bundles.svg" alt="" />
+        <div className="mt-6 md:mt-[0px] flex-shrink-0 w-[300px] flex-col md:w-[40px] lg:w-[550px] xl:w-[670px] 2xl:w-[1000px] flex justify-center md:mr-[-70px]">
+          <img 
+            src="/icons/about/bundles.svg" 
+            alt="Cable bundles"
+            className="w-full h-auto object-contain" 
+          />
         </div>
       </div>
 

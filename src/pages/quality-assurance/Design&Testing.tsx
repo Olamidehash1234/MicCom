@@ -1,7 +1,7 @@
 const ProductInfoComponent = () => {
   return (
     <div
-      className="px-[16px] py-[40px] md:p-[80px] text-[#001D0D]"
+      className="px-[16px] py-[40px] md:p-[80px] md:pb-[0px] md:pt-[60px] text-[#001D0D]"
       id="product-design"
     >
       {/* Product Design & Testing Section */}
@@ -89,7 +89,7 @@ const ProductInfoComponent = () => {
         standards.
       </p>
 
-      <div className="bg-[#004820] text-white p-6 md:p-[60px] md:mb-[20px] rounded-lg md:rounded-[20px] relative overflow-hidden uppercase">
+      {/* <div className="bg-[#004820] text-white p-6 md:p-[60px] md:mb-[20px] rounded-lg md:rounded-[20px] relative overflow-hidden uppercase">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between relative z-10">
           <div className="md:w-[700px]">
             <h2 className="text-2xl md:text-[40px] font-medium mb-4 md:mb-[30px]">
@@ -122,7 +122,7 @@ const ProductInfoComponent = () => {
             <img src="/icons/product/quality.svg" alt="" className="" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Health Safety and Environment */}
       <h2 className="text-[22px] md:text-[22px] pt-[20px] md:pt-[0px] font-medium mb-4 md:mb-[20px] md:leading-[50px]">

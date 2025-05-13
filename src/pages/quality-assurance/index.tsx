@@ -1,6 +1,6 @@
 import HeroComponent from './Hero'
 import Design from './Design&Testing'
-// import GetQuality from '../../pages/products/GetQuality';
+import GetQuality from '../../pages/products/GetQuality';
 
 
 const QualityAssurancePage = () => {
@@ -8,7 +8,7 @@ const QualityAssurancePage = () => {
     <div>
       <HeroComponent />
       <Design />
-      {/* <GetQuality />  */}
+      <GetQuality /> 
     </div>
   );
 };

@@ -92,98 +92,96 @@ const ProductCategory: React.FC = () => {
 
   return (
     <div className="py-12 md:pb-[230px] md:pt-[80px] relative overflow-hidden">
-      <div className="px-[16px] md:px-[80px]">
-        {/* Header Section */}
-        <div className="absolute left-[15px] -top-[50px] md:left-[33px] md:-top-[20px] z-10">
-          <img
-            src="/icons/home/Left-Line.svg"
-            alt="Cable Spool"
-            className="w-[100px] md:w-[250px] h-auto md:h-[1350px]"
-          />
-        </div>
-        <div className="mb-10 md:mb-16 relative">
-          <div className="text-[#E25319] text-sm md:text-[16px] uppercase font-medium mb-2">
-            PRODUCT CATEGORIES
-          </div>
-          <h2 className="text-2xl md:text-[40px] md:max-w-[700px] font-medium text-[#001D0D] mb-6 relative z-20 md:leading-[50px]">
-            Harness the Power of Reliable Cable Solutions with MicCom.
-          </h2>
-          {/* Copper big image as absolute positioned background */}
-          <div className="absolute -right-[22px] md:mt-[30px] -top-[30px] md:-right-[60px] md:-top-[20px] z-[5]">
+      <div className="">
+        <div className="md:px-[80px] px-[16px]">
+          {/* Header Section */}
+          <div className="absolute left-[15px] -top-[50px] md:left-[33px] md:-top-[20px] z-10">
             <img
-              src="/icons/home/copper-big.svg"
+              src="/icons/home/Left-Line.svg"
               alt="Cable Spool"
-              className="w-[200px] md:w-[400px] md:h-[900px] h-auto"
+              className="w-[100px] md:w-[250px] h-auto md:h-[1350px]"
             />
           </div>
+          <div className="mb-10 md:mb-16 relative">
+            <div className="text-[#E25319] text-sm md:text-[16px] uppercase font-medium mb-2">
+              PRODUCT CATEGORIES
+            </div>
+            <h2 className="text-2xl md:text-[40px] md:max-w-[700px] font-medium text-[#001D0D] mb-6 relative z-20 md:leading-[50px]">
+              Harness the Power of Reliable Cable Solutions with MicCom.
+            </h2>
+            {/* Copper big image as absolute positioned background */}
+            <div className="absolute -right-[22px] md:mt-[30px] -top-[30px] md:-right-[60px] md:-top-[20px] z-[5]">
+              <img
+                src="/icons/home/copper-big.svg"
+                alt="Cable Spool"
+                className="w-[200px] md:w-[400px] md:h-[900px] h-auto"
+              />
+            </div>
 
-          <div className="absolute -right-[22px] -bottom-[440px] md:-right-[50px] md:-bottom-[900px] z-[15]">
-            <img
-              src="/icons/home/copper-big-end.svg"
-              alt="Cable Spool"
-              className="w-[100px] md:w-[200px] h-auto md:m-[px]"
-            />
+            <div className="absolute -right-[22px] -bottom-[440px] md:-right-[50px] md:-bottom-[900px] z-[15]">
+              <img
+                src="/icons/home/copper-big-end.svg"
+                alt="Cable Spool"
+                className="w-[100px] md:w-[200px] h-auto md:m-[px]"
+              />
+            </div>
           </div>
         </div>
 
         {/* Product Display Section */}
-        <div className="flex flex-col lg:flex-row gap-[50px] md:mt-[90px] relative z-20">
+        <div
+          ref={scrollContainerRef}
+          className="flex flex-col lg:flex-row gap-[50px] md:mt-[90px] relative z-20 h-[600px] overflow-auto hide-scrollbar md:px-[80px] px-[16px]"
+        >
           {/* Left side - Image */}
-          <div className="w-full md:w-[600px] flex-shrink-0 h-[300px] md:h-[600px]">
+          <div className="w-full md:w-[600px] flex-shrink-0 h-[300px] md:h-full sticky top-0">
             <div className="rounded-[6px] overflow-hidden h-full">
               <img
+                key={activeSection} // Add key to force re-render
                 src={products[activeSection].image}
                 alt={products[activeSection].title}
-                className="w-full h-full object-cover transition-opacity duration-300"
+                className="w-full h-full object-cover transition-all duration-500"
               />
             </div>
           </div>
 
-          {/* Right side - Scrollable Content */}
-          <div className="flex-1 relative">
-            <div
-              ref={scrollContainerRef}
-              className="overflow-y-auto mt-[50px] md:mt-[0px] pr-4 md:pr-0 hide-scrollbar h-[300px] md:h-[600px] relative"
-              style={{ scrollBehavior: "smooth" }}
-            >
-              <div className="absolute top-0 left-0 w-full">
-                {products.map((product, index) => (
+          {/* Right side - Content */}
+          <div className="flex-1">
+            <div className="w-full">
+              {products.map((product, index) => (
+                <div
+                  key={product.id}
+                  ref={(el: HTMLDivElement | null) => {
+                    sectionRefs.current[index] = el;
+                  }}
+                  className={`pb-8 md:pb-[50px] mb-8 md:mb-[30px] ${
+                    index === products.length - 1
+                      ? ""
+                      : "border-b border-[#009140]/20"
+                  } ${
+                    activeSection === index ? "opacity-100" : "opacity-50"
+                  } transition-all duration-500`}
+                >
                   <div
-                    key={product.id}
-                    ref={(el: HTMLDivElement | null) => {
-                      sectionRefs.current[index] = el;
+                    className="transition-colors duration-300 text-justify"
+                    style={{
+                      color: activeSection === index ? "#001D0D" : "#001D0D",
                     }}
-                    className={`pb-8 md:pb-[50px] mb-8 md:mb-[30px] ${
-                      index === products.length - 1
-                        ? ""
-                        : "border-b border-[#009140]/20"
-                    } ${
-                      activeSection === index
-                        ? "opacity-100"
-                        : "opacity-50"
-                    } transition-opacity duration-500`}
                   >
-                    <div
-                      className="transition-colors duration-300 text-justify"
-                      style={{
-                        color: activeSection === index ? "#001D0D" : "#001D0D",
-                      }}
-                    >
-                      <h3 className="text-xl md:text-[24px] font-medium mb-4 md:leading-[40px]">
-                        {product.title}
-                      </h3>
-                      <p className="mb-6 md:mb-[50px] text-[14px] md:text-[14px] opacity-80 md:leading-[30px] font-normal">
-                        {product.description}
-                      </p>
+                    <h3 className="text-xl md:text-[24px] font-medium mb-4 md:leading-[40px]">
+                      {product.title}
+                    </h3>
+                    <p className="mb-6 md:mb-[50px] text-[14px] md:text-[14px] opacity-80 md:leading-[30px] font-normal">
+                      {product.description}
+                    </p>
 
-                      {/* Learn More Button */}
-                      <button className="border border-[#FF5C00] text-[#FF5C00] px-[39px] py-[9px] text-sm rounded transition-colors duration-300">
-                        {product.buttonText}
-                      </button>
-                    </div>
+                    {/* Learn More Button */}
+                    <button className="border border-[#FF5C00] text-[#FF5C00] px-[39px] py-[9px] text-sm rounded transition-colors duration-300">
+                      {product.buttonText}
+                    </button>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
