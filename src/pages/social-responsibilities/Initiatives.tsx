@@ -89,7 +89,7 @@ export default function CSRInitiatives() {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[40px] pt-4 px-[16px] md:px-[80px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[40px] pt-4 md:pt-[0px] px-[16px] md:px-[80px]">
         {initiatives.map((initiative) => (
           <div
             key={initiative.id}
@@ -134,7 +134,7 @@ export default function CSRInitiatives() {
         ))}
       </div>
 
-      <div className="w-full h-px bg-[#00482033] mt-16 md:mt-[80px]"></div>
+      <div className="w-full h-px bg-[#00482033] mt-16 md:mt-[60px]"></div>
     </div>
   );
 }

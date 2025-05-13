@@ -111,7 +111,14 @@ export default function Footer() {
               Get In Touch
             </h3>
             <ul className="space-y-[14px]">
-              <li>0807-720-0496</li>
+              <li>
+                <a
+                  href="tel:0807-720-0496"
+                  className="hover:text-[#E25319] text-[#001D0D] hover:underline"
+                >
+                  0807-720-0496
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:info@miccomcables.com"
@@ -129,11 +136,16 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-[14px] md:leading-[24px]">
-                3-5 Edun - Alaran Road
-                <br />
-                Behind Ahmadiya Hospital
-                <br />
-                Ojokoro Agege- Lagos, Nigeria.
+                <a 
+                  href="/contact#map" 
+                  className="hover:text-[#E25319] hover:underline"
+                >
+                  3-5 Edun - Alaran Road
+                  <br />
+                  Behind Ahmadiya Hospital
+                  <br />
+                  Ojokoro Agege- Lagos, Nigeria.
+                </a>
               </li>
             </ul>
           </div>

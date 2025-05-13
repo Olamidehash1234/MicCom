@@ -1,6 +1,6 @@
 export default function SocialResponsibilities() {
   return (
-    <div className="px-[16px] py-10 md:p-[80px] ">
+    <div className="px-[16px] py-10 md:px-[80px] md:py-[60px] ">
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="">
           {/* Header Navigation */}

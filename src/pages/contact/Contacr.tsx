@@ -23,7 +23,7 @@ const ContactInformationComponent = () => {
 
   return (
     <div className="">
-      <div className="px-[16px] py-[40px]  md:p-[80px]">
+      <div className="px-[16px] py-[40px]  md:px-[80px] md:py-[60px]">
         <div className="flex flex-col md:flex-row gap-6 md:gap-10">
           {/* Left Column - Contact Details */}
           <div className="flex-1">
@@ -171,7 +171,7 @@ const ContactInformationComponent = () => {
       </div>
 
       {/* Map Section */}
-      <div className="mt-6 md:mb-[80px] md:px-[80px] mb-[40px] h-[300px] md:h-[450px] w-full">
+      <div id="map" className="mt-6 md:mt-[0px] md:mb-[80px] md:px-[80px] mb-[40px] h-[300px] md:h-[450px] w-full">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.876408144299!2d3.2924123736508384!3d6.662235321538359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9728eb2dae25%3A0xa5794c85531e1c98!2s3-5%20Edun%20Alaran%20Rd%2C%20Adealu%20St%2C%20behind%20Ahmadiya%20Hospital%2C%20Dopemu%2C%20Lagos%20101232%2C%20Lagos!5e0!3m2!1sen!2sng!4v1746832953503!5m2!1sen!2sng"
           width="100%"

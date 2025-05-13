@@ -147,7 +147,7 @@ const ProductCategory: React.FC = () => {
 
           {/* Right side - Content */}
           <div className="flex-1">
-            <div className="w-full">
+            <div className="w-full pb-[200px]"> {/* Added bottom padding here */}
               {products.map((product, index) => (
                 <div
                   key={product.id}

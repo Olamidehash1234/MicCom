@@ -13,18 +13,16 @@ export default function CompanyProfile() {
       </div>
 
       {/* Main Heading */}
-      <div className="relative mb-8 md:mb-[30px] flex flex-col md:flex-row justify-between items-center">
-        <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] leading-tight max-w-[600px]">
-          Pioneering Cable Manufacturing<br />
-          Excellence in Nigeria and Beyond
-        </h1>
+      <div className="relative mb-8 md:mb-[30px] flex flex-col md:flex-row items-start md:items-center">
+        <div className="max-w-[600px] flex-shrink-0">
+          <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] leading-tight">
+            Pioneering Cable Manufacturing<br />
+            Excellence in Nigeria and Beyond
+          </h1>
+        </div>
         
-        <div className="mt-6 md:mt-[0px] flex-shrink-0 w-[300px] flex-col md:w-[40px] lg:w-[550px] xl:w-[670px] 2xl:w-[1000px] flex justify-center md:mr-[-70px]">
-          <img 
-            src="/icons/about/bundles.svg" 
-            alt="Cable bundles"
-            className="w-full h-auto object-contain" 
-          />
+        <div className="mt-6 md:mt-0 md:-mr-[70px] flex justify-center w-full md:w-[1400px]">
+          <img src="/icons/about/bundles.svg" alt="" className="w-full h-auto" />
         </div>
       </div>
 

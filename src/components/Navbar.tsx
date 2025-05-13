@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`w-full bg-white shadow-md transition-all duration-300 ${
+    <header className={`w-full bg-white shadow-md transition-all max-w-[2000px] duration-300 ${
       isScrolled ? 'fixed top-0 z-50' : 'relative'
     }`}>
       {/* Desktop Navbar */}

@@ -48,12 +48,12 @@ const BlogHomepageComponent = () => {
   ];
 
   return (
-    <div className="px-[16px] py-[40px] md:p-[80px]">
+    <div className="px-[16px] py-[40px] md:px-[80px] md:py-[60px]">
       {/* Filter and Search */}
-      <div className="flex flex-col md:flex-row justify-between mb-[60px] md:mb-[80px] space-y-4 md:space-y-0 xl:gap-[60px]">
-        <div className="flex items-center space-x-3">
-          <span className="text-sm font-medium md:text-[20px]">Filter By:</span>
-          <div className="w-[275px] xl:w-[550px]">
+      <div className="flex flex-col md:flex-row md:gap-[60px] space-y-4 md:space-y-0  md:mb-[60px]">
+        <div className="flex items-center gap-[10px] md:gap-[20px] flex-1">
+          <span className="text-sm font-medium md:text-[20px] whitespace-nowrap">Filter By:</span>
+          <div className="w-[275px] md:w-full">
             <CustomSelectReUse
               options={filterOptions}
               value={selectedFilter}
@@ -63,7 +63,7 @@ const BlogHomepageComponent = () => {
           </div>
         </div>
         
-        <div className="w-full xl:w-[550px]">
+        <div className="w-full md:w-full flex-1">
           <CustomSearch
             value={searchQuery}
             onChange={setSearchQuery}

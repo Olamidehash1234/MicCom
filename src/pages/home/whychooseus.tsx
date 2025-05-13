@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full pt-12 md:pb-[10px] md:pt-[0px] lg:py-20]">
       <div className="w-full h-px bg-[#00482033] mb-16 md:mb-[60px]"></div>
-      <div className="px-[16px] md:px-[80px]">
+      <div className="px-[16px] md:px-[80px] bg-[#F9F3E8]" >
         <h2 className="text-3xl md:text-[40px] lg:text-5xl font-medium text-[#001D0D] mb-12 md:mb-[40px] md:leading-[50px]">
           Why Choose Us
         </h2>
