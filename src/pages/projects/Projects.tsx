@@ -75,22 +75,22 @@ const PartnersShowcaseComponent = () => {
         "/icons/projects/industrial/dangote.svg",
         "/icons/projects/industrial/elektrint.svg",
         "/icons/projects/industrial/honeywell.svg",
-        "/icons/projects/industrial/kinetic.svg",
+        "/icons/projects/industrial/kinetic.png",
         "/icons/projects/industrial/me.svg",
         "/icons/projects/industrial/mar.svg",
-        "/icons/projects/industrial/orritech.svg",
+        "/icons/projects/industrial/orritech.png",
         "/icons/projects/industrial/ramit.svg",
         "/icons/projects/industrial/tofa.svg",
         "/icons/projects/industrial/vacc.svg",
         "/icons/projects/industrial/kenol.svg",
-        "icons/projects/industrial/lubell.svg",  
+        "icons/projects/industrial/lubell.png",  
       ]
     }
   ];
 
   return (
     <div className="p-[16px] md:px-[80px] md:pb-[0px]">
-      <div className="divide-y divide-[#E25319] border-t border-[#E25319]">
+      <div className="divide-y divide-[#E25319] border-y border-[#E25319]">
         {categories.map((category) => (
           <div key={category.id} className="">
             <div
@@ -115,11 +115,11 @@ const PartnersShowcaseComponent = () => {
               <div className="mt-4 pb-6">
                 <div className={`grid  ${
                   category.id === 5 
-                    ? "grid-cols-5 md:grid-cols-8" 
+                    ? "grid-cols-5 md:grid-cols-auto" 
                     : "grid-cols-4 md:grid-cols-6"
                 } gap-4 md:gap-x-[60px] md:gap-y-[30px]`}>
                   {category.logos.map((logo, index) => (
-                    <div key={`${category.name}-${index}`} className="flex items-center justify-center">
+                    <div key={`${category.name}-${index}`} className="flex justify-center">
                       <img 
                         src={logo} 
                         alt={`Partner logo ${index + 1}`} 
