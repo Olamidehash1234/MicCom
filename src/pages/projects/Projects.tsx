@@ -99,7 +99,7 @@ const PartnersShowcaseComponent = () => {
               }`}
               onClick={() => toggleSection(category.id)}
             >
-              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px] py-4 md:pt-[20px] md:pb-[20px]">
+              <h3 className="text-[#001D0D] font-medium text-lg md:text-[22px] md:leading-[36px] md:pl-[10px] py-4 md:pt-[10px] md:pb-[10px]">
                 {category.name}
               </h3>
               <div className="text-[#001D0D] md:pr-[20px]">
