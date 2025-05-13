@@ -89,7 +89,7 @@ const PartnersShowcaseComponent = () => {
   ];
 
   return (
-    <div className="p-[16px] md:px-[80px] md:pb-[0px]">
+    <div className="px-[16px] md:px-[80px] md:pb-[0px]">
       <div className="divide-y divide-[#E25319] border-y border-[#E25319]">
         {categories.map((category) => (
           <div key={category.id} className="">
