@@ -95,7 +95,7 @@ const PartnersShowcaseComponent = () => {
           <div key={category.id} className="">
             <div
               className={`flex justify-between items-center cursor-pointer ${
-                openSection === category.id ? "border-b border-[#E25319] pb-4 md:pb-[0px]" : ""
+                openSection === category.id ? "border-b border-[#E25319] pb-0 md:pb-[0px]" : ""
               }`}
               onClick={() => toggleSection(category.id)}
             >

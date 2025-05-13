@@ -84,7 +84,7 @@ export default function AwardsAccordion() {
             <div
               className={`flex justify-between items-center cursor-pointer  ${
                 openSection === section.id
-                  ? "border-b border-[#0000004D] pb-4 md:pb-[0px]"
+                  ? "border-b border-[#0000004D] pb-0 md:pb-[0px]"
                   : ""
               }`}
               onClick={() => toggleSection(section.id)}
@@ -103,7 +103,7 @@ export default function AwardsAccordion() {
 
             {openSection === section.id && section.items.length > 0 && (
               <div className="mt-4 divide-y divide-[#0000004D]">
-                <div className="text-[#001D0D] pl-1 md:pl-[20px] md:pb-[20px] space-y-[20px]">
+                <div className="text-[#001D0D] pl-1 md:pl-[20px] pb-[20px] md:pb-[20px] space-y-[20px]">
                   {section.items.map((item, index) => (
                     <div key={index}>
                       {typeof item === "string" ? (

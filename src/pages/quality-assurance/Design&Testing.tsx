@@ -1,7 +1,7 @@
 const ProductInfoComponent = () => {
   return (
     <div
-      className="px-[16px] py-[40px] md:p-[80px] md:pb-[0px] md:pt-[60px] text-[#001D0D]"
+      className="px-[16px] pt-[40px] md:py-[40px] md:p-[80px] md:pb-[0px] md:pt-[60px] text-[#001D0D]"
       id="product-design"
     >
       {/* Product Design & Testing Section */}

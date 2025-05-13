@@ -1,6 +1,6 @@
 export default function GetStartedComponent() {
   return (
-    <div className="bg-[#004820] text-white p-6 mx-[16px] my-[60px] md:mx-[80px] md:p-[60px] rounded-lg md:rounded-[20px] relative overflow-hidden">
+    <div className="bg-[#004820] text-white p-6 mx-[16px] my-[40px] md:my-[60px] md:mx-[80px] md:p-[60px] rounded-lg md:rounded-[20px] relative overflow-hidden">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between relative z-10">
         <div className="md:w-[700px]">
           <h2 className="text-2xl md:text-[40px] font-medium mb-4 md:mb-[30px]">

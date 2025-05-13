@@ -50,7 +50,7 @@ const BlogHomepageComponent = () => {
   return (
     <div className="px-[16px] py-[40px] md:px-[80px] md:py-[60px]">
       {/* Filter and Search */}
-      <div className="flex flex-col md:flex-row md:gap-[60px] space-y-4 md:space-y-0  md:mb-[60px]">
+      <div className="flex flex-col md:flex-row md:gap-[60px] space-y-4 md:space-y-0 mb-[40px]  md:mb-[60px]">
         <div className="flex items-center gap-[10px] md:gap-[20px] flex-1">
           <span className="text-sm font-medium md:text-[20px] whitespace-nowrap">Filter By:</span>
           <div className="w-[275px] md:w-full">

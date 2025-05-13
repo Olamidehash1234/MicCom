@@ -9,7 +9,7 @@ const Card = ({ text }: CardProps) => {
         <img
           src="/images/career/image.png"
           alt="Career opportunity"
-          className="w-full h-[280px] md:h-[220px] object-cover  rounded-[6px]"
+          className="w-full h-full md:h-[220px] object-cover  rounded-[6px]"
         />
         <div className="absolute inset-0 flex items-end">
           <p className="text-[#F8F8F8] px-[20px] py-[20px] text-[18px] md:text-[16px] md:leading-[20px]">

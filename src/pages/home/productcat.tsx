@@ -134,7 +134,7 @@ const ProductCategory: React.FC = () => {
           className="flex flex-col lg:flex-row gap-[50px] md:mt-[90px] relative z-20 h-[600px] overflow-auto hide-scrollbar md:px-[80px] px-[16px]"
         >
           {/* Left side - Image */}
-          <div className="w-full md:w-[600px] flex-shrink-0 h-[300px] md:h-full sticky top-0">
+          <div className="w-full md:w-[600px] flex-shrink-0 h-[300px] md:h-full sticky top-0 z-10">
             <div className="rounded-[6px] overflow-hidden h-full">
               <img
                 key={activeSection} // Add key to force re-render
@@ -146,8 +146,8 @@ const ProductCategory: React.FC = () => {
           </div>
 
           {/* Right side - Content */}
-          <div className="flex-1">
-            <div className="w-full pb-[200px]"> {/* Added bottom padding here */}
+          <div className="flex-1 relative lg:mt-0">
+            <div className="w-full md:pb-[200px]"> {/* Added bottom padding here */}
               {products.map((product, index) => (
                 <div
                   key={product.id}
@@ -171,7 +171,7 @@ const ProductCategory: React.FC = () => {
                     <h3 className="text-xl md:text-[24px] font-medium mb-4 md:leading-[40px]">
                       {product.title}
                     </h3>
-                    <p className="mb-6 md:mb-[50px] text-[14px] md:text-[14px] opacity-80 md:leading-[30px] font-normal">
+                    <p className="mb-6 md:mb-[50px] text-[14px] md:text-[14px] opacity-100 md:leading-[30px] font-normal">
                       {product.description}
                     </p>
 
