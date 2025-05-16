@@ -22,9 +22,14 @@ export default function GetStartedComponent() {
             DEPARTMENTAL LEVEL WHICH ARE REVIEWED AS NECESSARY FOR CONTINUAL
             SUITABILITY.
           </p>
-          <button className="w-full md:w-auto bg-[#E25319] hover:bg-orange-600 text-white font-medium py-2 px-6 md:px-[54px] md:py-[9px] md:leading-[26px] md:text-[14px] rounded-md transition-colors duration-300">
+          <a
+            href="https://miccomcables.com/2023%20BROCHURE.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-full md:w-auto bg-[#E25319] hover:bg-orange-600 text-white font-medium py-2 px-6 md:px-[54px] md:py-[9px] md:leading-[26px] md:text-[14px] rounded-md transition-colors duration-300"
+          >
             Download Brochure
-          </button>
+          </a>
         </div>
       </div>
 

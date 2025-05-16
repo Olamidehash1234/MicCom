@@ -11,8 +11,10 @@ interface Product {
 
 const ProductCategory: React.FC = () => {
   const [activeSection, setActiveSection] = useState<number>(0);
+  const [isInView, setIsInView] = useState(false);
   const sectionRefs = useRef<Array<HTMLDivElement | null>>([]);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const products: Product[] = [
     {
@@ -50,26 +52,43 @@ const ProductCategory: React.FC = () => {
     },
   ];
 
+  // Add intersection observer
   useEffect(() => {
-    sectionRefs.current = sectionRefs.current.slice(0, products.length);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Modify scroll handler
+  useEffect(() => {
+    if (!isInView) return;
 
     const handleScroll = (): void => {
       const container = scrollContainerRef.current;
       if (!container) return;
 
-      const containerTop = container.getBoundingClientRect().top;
+      const containerRect = container.getBoundingClientRect();
       const scrollPosition = container.scrollTop;
 
       for (let i = 0; i < sectionRefs.current.length; i++) {
         const sectionRef = sectionRefs.current[i];
         if (!sectionRef) continue;
 
-        const sectionTop = sectionRef.offsetTop - containerTop;
-        const sectionHeight = sectionRef.offsetHeight;
+        const sectionRect = sectionRef.getBoundingClientRect();
+        const sectionTop = sectionRef.offsetTop;
 
         if (
-          scrollPosition >= sectionTop - 100 &&
-          scrollPosition < sectionTop + sectionHeight - 100
+          scrollPosition >= sectionTop - containerRect.height / 2 &&
+          scrollPosition < sectionTop + sectionRect.height - containerRect.height / 2
         ) {
           setActiveSection(i);
           break;
@@ -77,21 +96,21 @@ const ProductCategory: React.FC = () => {
       }
     };
 
-    const scrollContainer = scrollContainerRef.current;
-    if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", handleScroll);
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
       handleScroll();
     }
 
     return () => {
-      if (scrollContainer) {
-        scrollContainer.removeEventListener("scroll", handleScroll);
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
       }
     };
-  }, [products.length]);
+  }, [isInView]);
 
   return (
-    <div className="py-12 md:pb-[230px] md:pt-[80px] relative overflow-hidden">
+    <div ref={containerRef} className="py-12 md:pb-[230px] md:pt-[80px] relative overflow-hidden">
       <div className="">
         <div className="md:px-[80px] px-[16px]">
           {/* Header Section */}
@@ -114,11 +133,11 @@ const ProductCategory: React.FC = () => {
               <img
                 src="/icons/home/copper-big.svg"
                 alt="Cable Spool"
-                className="w-[200px] md:w-[400px] md:h-[900px] h-auto"
+                className="w-[200px] md:w-[400px] md:h-[820px] h-auto"
               />
             </div>
 
-            <div className="absolute -right-[22px] -bottom-[440px] md:-right-[50px] md:-bottom-[900px] z-[15]">
+            <div className="absolute -right-[22px] -bottom-[440px] md:-right-[40px] md:-bottom-[820px] z-[15]">
               <img
                 src="/icons/home/copper-big-end.svg"
                 alt="Cable Spool"
@@ -131,7 +150,7 @@ const ProductCategory: React.FC = () => {
         {/* Product Display Section */}
         <div
           ref={scrollContainerRef}
-          className="flex flex-col lg:flex-row gap-[50px] md:mt-[90px] relative z-20 h-[600px] overflow-auto hide-scrollbar md:px-[80px] px-[16px]"
+          className="flex flex-col lg:flex-row gap-[50px] md:pt-[40px] relative z-20 h-[600px] md:h-[550px] overflow-auto hide-scrollbar md:px-[80px] px-[16px] focus:outline-none"
         >
           {/* Left side - Image */}
           <div className="w-full md:w-[600px] flex-shrink-0 h-[300px] md:h-full sticky top-0 z-10">
@@ -147,7 +166,7 @@ const ProductCategory: React.FC = () => {
 
           {/* Right side - Content */}
           <div className="flex-1 relative lg:mt-0">
-            <div className="w-full md:pb-[200px]"> {/* Added bottom padding here */}
+            <div className="w-full md:pb-[10px]"> {/* Added bottom padding here */}
               {products.map((product, index) => (
                 <div
                   key={product.id}

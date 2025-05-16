@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
           Why Choose Us
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px] md:gap-[40px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-[20px] md:gap-[40px]">
           {features.map((feature) => (
             <div
               key={feature.id}
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
                 />
               </div>
 
-              <h3 className="text-[26px] md:text-[34px] md:leading-[40px] font-medium text-[#001D0D] mb-2 md:mb-[10px] transition-colors duration-100 group-hover:text-white">
+              <h3 className="text-[34px] max-[1308px]:text-[24px] md:leading-[40px] font-medium text-[#001D0D] mb-2 md:mb-[10px] transition-colors duration-100 group-hover:text-white">
                 {feature.title}
               </h3>
 
