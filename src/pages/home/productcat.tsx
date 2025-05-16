@@ -137,11 +137,11 @@ const ProductCategory: React.FC = () => {
               />
             </div>
 
-            <div className="absolute -right-[22px] -bottom-[440px] md:-right-[40px] md:-bottom-[820px] z-[15]">
+            <div className="absolute -right-[22px] -bottom-[440px] md:-right-[25px] md:-bottom-[800px] z-[15]">
               <img
                 src="/icons/home/copper-big-end.svg"
                 alt="Cable Spool"
-                className="w-[100px] md:w-[200px] h-auto md:m-[px]"
+                className="w-[100px] md:w-[160px] h-auto md:m-[px]"
               />
             </div>
           </div>
