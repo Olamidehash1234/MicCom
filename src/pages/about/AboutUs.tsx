@@ -43,7 +43,7 @@ export default function CompanyProfile() {
           </p>
           
           <p className="mb-4 md:mb-[40px]">
-            From its humble origins, MicCom Cables and Wires has over the past four decades reached a pre-eminent position in its market segment with fully operational marketing offices strategically placed to serve her customers by envisioning itself as a global player with a local presence. In this time, the company has developed strong technical capabilities and produces several different types of cables and wires for various electrical applications and has obtained quality systems certifications including ISO 9001, ISO 14001 and OHSAS 18001.
+            From its humble origins, MicCom Cables and Wires has over the past four decades reached a pre-eminent position in its market segment with fully operational marketing offices strategically placed to serve her customers by envisioning itself as a global player with a local presence. In this time, the company has developed strong technical capabilities and produces several different types of cables and wires for various electrical applications and has obtained quality systems certifications including ISO 9001, ISO 14001 and  ISO 45001.
           </p>
           
           <p className="mb-4 md:mb-[0px]">

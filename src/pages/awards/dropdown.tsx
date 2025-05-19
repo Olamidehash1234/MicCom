@@ -36,7 +36,8 @@ export default function AwardsAccordion() {
       title: "Certificates of Membership & Recognition",
       items: [
         "Certificate of Membership – Manufacturers Association of Nigeria (MAN)",
-        "DUNS & BRADSTREET Certificate",
+        "Cable Manufacturers Association of Nigeria (CAMAN)",
+        "DUNS & BRADSTREET Certificate"
       ],
     },
     {
@@ -52,12 +53,11 @@ export default function AwardsAccordion() {
     },
     {
       id: "iso",
-      title: "ISO Quality Management System Certifications",
+      title: "ISO Management System Certification",
       items: [
-        "NIS ISO 9002",
-        "NIS ISO 9001:2000",
-        "NIS ISO 9001:2008",
         "ISO 9001:2015",
+        "ISO 14001:2015",
+        "ISO 45001:2018",
       ],
     },
     {

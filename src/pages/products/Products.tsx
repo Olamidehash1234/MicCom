@@ -51,7 +51,7 @@ export default function ProductsAccordion(){
         },
         {
           product: 'PVC insulated and Sheathed - Single-core copper cable 0.6/1kv',
-          type: 'NYCY 1-Core',
+          type: 'NCYY 1-Core',
           application: 'Used in installations, cable ducts/trays, and in industrial plants and substations. Can also be used underground with additional protection.'
         },
         {
@@ -78,7 +78,7 @@ export default function ProductsAccordion(){
     },
     {
         id: 'cables',
-        title: '2. Single & Multiple Cables',
+        title: '2. Single & Multi-core Cables',
         products: [
           {
             product: 'PVC Insulated Consumer Connection - Aluminum Cables 0.6/1kv ',
@@ -111,22 +111,22 @@ export default function ProductsAccordion(){
             application: 'General underground electricity supply'
           },
           {
-            product: 'PCV Insulated and sheathed Two- Core non-armored copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Two- Core non-armored copper mains cables 0.6/1kv',
             type: 'NCYY 2 - Core',
             application: 'For indoor eletrical installation'
           },
           {
-            product: 'PCV Insulated and sheathed Three- Core non-armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Three- Core non-armoured copper mains cables 0.6/1kv',
             type: 'NCYY 3- Core',
             application: 'For indoor eletrical installation'
           },
           {
-            product: 'PCV Insulated and sheathed Four- Core non-armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Four- Core non-armoured copper mains cables 0.6/1kv',
             type: 'NCYY 4- Core',
             application: 'For indoor eletrical installation'
           },
           {
-            product: 'PCV Insulated and sheathed Five- Core non-armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Five- Core non-armoured copper mains cables 0.6/1kv',
             type: 'NCYY 5- Core',
             application: 'For indoor eletrical installation'
           },
@@ -159,12 +159,12 @@ export default function ProductsAccordion(){
         products: [
           {
             product: 'Ordinary Flexible Cords, PVC Insulated And Sheated 300/500 V',
-            type: 'NCYY - R...f (227 IEC 53 and H05VVF to HD 21.5S2)',
+            type: 'NCYY - R...f ',
             application: 'Use in light fittings and household appliances and office machines where the mechanical stresses are low.'
           },
           {
-            product: 'Flexible Cables, PVC Insulated and sheathed 500V',
-            type: 'NCYY - R...f (227 IEC 53 and H05VVF to HD 21.5S2)',
+            product: 'Flexible Cables, PVC Insulated and sheathed 300/500V',
+            type: 'NCYY - R...f',
             application: 'Use in light fittings and other indoor electrical installation'
           },
         ]
@@ -174,52 +174,52 @@ export default function ProductsAccordion(){
         title: '5. Armoured / Non-Armoured Cables',
         products: [
           {
-            product: 'PCV Insulated and sheathed Two - Core armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Two - Core armoured copper mains cables 0.6/1kv',
             type: 'NCYRY/FY 2- Core',
             application: 'For general underground electricity supply, where mechanical damages are expected to occur'
           },
           {
-            product: 'PCV Insulated and sheathed Three - Core armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Three - Core armoured copper mains cables 0.6/1kv',
             type: 'NCYRY/FY 3- Core',
             application: 'For general underground electricity supply, where mechanical damages are expected to occur'
           },
           {
-            product: 'PCV Insulated and sheathed Four- Core armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Four- Core armoured copper mains cables 0.6/1kv',
             type: 'NCYRY/FY 4- Core',
             application: 'For general underground electricity supply, where mechanical damages are expected to occur'
           },
           {
-            product: 'PCV Insulated and sheathed Five- Core armoured copper mains cables 0.6/1kv',
+            product: 'PVC Insulated and sheathed Five- Core armoured copper mains cables 0.6/1kv',
             type: 'NCYRY/FY 5- Core',
             application: 'For general underground electricity supply, where mechanical damages are expected to occur'
           },
           {
-            product: 'PCV Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
-            type: 'NCYY cc 1.5 sqmm',
+            product: 'PVC Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
+            type: 'NCYY control cable 1.5 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },
           {
-            product: 'PCV Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
-            type: 'NCYY cc 2.5 sqmm',
+            product: 'PVC Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
+            type: 'NCYY control cable 2.5 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },
           {
-            product: 'PCV Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
-            type: 'NCYY cc 4 sqmm',
+            product: 'PVC Insulated and sheathed non-armoured copper mains cables 0.6/1kv with numbered cores',
+            type: 'NCYY control cable 4 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },
           {
-            product: 'PCV Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
+            product: 'PVC Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
             type: 'NCYY/FY -cc 1.5 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },
           {
-            product: 'PCV Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
+            product: 'PVC Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
             type: 'NCYY/FY -cc 2.5 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },
           {
-            product: 'PCV Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
+            product: 'PVC Insulated and sheathed armoured copper mains cables 0.6/1kv with numbered cores',
             type: 'NCYY/FY -cc 4 sqmm',
             application: 'For indoor and outdoor electricity supply, in industrial plants , substation and power distribution schemes'
           },

@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/products#cables" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
-                  Single & Multiple Cables
+                  Single & Multi-Core Cables
                 </a>
               </li>
               <li>

@@ -40,8 +40,8 @@ const ProductInfoComponent = () => {
       </p>
 
       <ul className="ml-6 mb-6 list-disc text-[14px] md:text-[14px] mb-4 md:leading-[30px]">
-        <li className="mt-1">Product Design</li>
         <li className="mt-1">Cable Selection</li>
+        <li className="mt-1">Product Design</li>
         <li className="mt-1">Handling</li>
         <li className="mt-1">Installation</li>
         <li className="mt-1">Fault Finding and trouble shooting</li>

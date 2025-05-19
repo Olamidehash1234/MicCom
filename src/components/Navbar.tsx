@@ -52,6 +52,16 @@ const Navbar = () => {
           <div className="hidden xl:block">
             <div className="ml-10 flex items-center space-x-[40px] text-[16px]">
               <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `font-medium leading-[24px] ${
+                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
+                  }`
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   `font-medium leading-[24px] ${
@@ -161,11 +171,22 @@ const Navbar = () => {
       >
         <div className="min-h-screen py-20 pt-[20px] flex flex-col items-left px-[16px]">
           <NavLink
-            to="/about"
+            to="/"
             onClick={handleLinkClick}
             className={({ isActive }) =>
               `text-left py-4 text-[18px] font-medium ${
                 isActive ? "text-[#E25319]" : "text-[#001D0D] w-full hover:text-[#E25319]"
+              }`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            onClick={handleLinkClick}
+            className={({ isActive }) =>
+              `text-left py-4 text-[18px] font-medium ${
+                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
               }`
             }
           >

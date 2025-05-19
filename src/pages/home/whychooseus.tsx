@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
       id: 2,
       icon: "/icons/home/certificate.svg",
       hoverIcon: "/icons/home/certificate-hover.svg",
-      title: "Tripple ISO Certified",
+      title: "Triple ISO Certified",
       description: "Certification",
     },
     {
