@@ -36,7 +36,7 @@ const ContactInformationComponent = () => {
                 Location
               </h3>
               <p className="text-[14px] md:text-[16px] md:leading-[24px]">
-                3-5 Edin - Alaran Road,
+                3-5 Edun - Alaran Road,
               </p>
               <p className="text-[14px] md:text-[16px] md:leading-[24px]">
                 Behind Ahmadiya Hospital

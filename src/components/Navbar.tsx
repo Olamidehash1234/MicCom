@@ -50,7 +50,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation - change from md to xl */}
           <div className="hidden xl:block">
-            <div className="ml-10 flex items-center space-x-[40px] text-[16px]">
+            <div className=" flex items-center gap-x-[40px] text-[16px]">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
