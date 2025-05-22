@@ -5,7 +5,7 @@ const TrainingAndVacancyComponent = () => {
       <section className="mb-12 md:mb-[40px]">
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Training & Development</h2>
         
-        <div className="text-[14px] md:leading-[30px] text-justify">
+        <div className="text-[14px] md:text-[16px] md:leading-[30px] text-justify">
           <p>
             MicCom Cables and Wires Ltd's primary mission is to permit our people to meet their professional and personal goals in the context of providing excellence services, excellence technicality and personal dedication. Our staff are our most important resource as they are responsible for managing all other resources. Developing them and ensuring their commitment are our most compelling human resources task.
           </p>
@@ -24,7 +24,7 @@ const TrainingAndVacancyComponent = () => {
       <section>
         <h2 className="text-[22px] md:text-[22px] font-medium mb-6 md:mb-[40px] md-leading-[50px]">Vacancy</h2>
         
-        <p className="text-[14px] md:leading-[30px]">
+        <p className="text-[14px] md:text-[16px] md:leading-[30px]">
           MicCom Cables and Wires Ltd is always on the look out for dynamic, forward thinking and innovative minds, to service our various department. However we have very strong core values that we imbibe. If you have these qualities, submit your CV to <span className="cursor-pointer underline text-[#E25319]"><a href="mailto:info@miccomcables.com">info@miccomcables.com </a> </span>
         </p>
       </section>

@@ -1,7 +1,7 @@
 import HeroComponent from './Hero'
 import Aboutcomponent from './AboutUs'
-import Values from './Values'
-import Purpose from './Purpose'
+// import Values from './Values'
+// import Purpose from './Purpose'
 import GetStartedComponent from '../home/getstarted'
 
 const AboutPage = () => {
@@ -9,8 +9,8 @@ const AboutPage = () => {
     <div>
       <HeroComponent />
       <Aboutcomponent />
-      <Values />
-      <Purpose />
+      {/* <Values /> */}
+      {/* <Purpose /> */}
       <GetStartedComponent />
     </div>
   );

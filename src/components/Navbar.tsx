@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +51,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation - change from md to xl */}
           <div className="hidden xl:block">
-            <div className=" flex items-center gap-x-[40px] text-[16px]">
+            <div className="flex items-center gap-x-[40px] text-[16px]">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -61,16 +62,54 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `font-medium leading-[24px] ${
-                    isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
-                  }`
-                }
-              >
-                About Us
-              </NavLink>
+              
+              {/* About Us Dropdown */}
+              <div className="relative group">
+                <button className="font-medium leading-[24px] text-[#001D0D] hover:text-[#E25319] flex items-center gap-1 py-2 group">
+                  About Us
+                  <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {/* Modified dropdown container with extended hover area */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 pt-2 md:pt-[40px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <div className="w-[300px] bg-white shadow-lg py-2 rounded-md">
+                    <NavLink 
+                      to="/about" 
+                      className={({ isActive }) =>
+                        `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
+                      }
+                    >
+                      Company Profile
+                    </NavLink>
+                    <NavLink 
+                      to="/about/values" 
+                      className={({ isActive }) =>
+                        `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
+                      }
+                    >
+                      Our Core Values
+                    </NavLink>
+                    <NavLink 
+                      to="/about/purpose" 
+                      className={({ isActive }) =>
+                        `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
+                      }
+                    >
+                      Our Purpose
+                    </NavLink>
+                    <NavLink 
+                      to="/about/ceo-message" 
+                      className={({ isActive }) =>
+                        `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
+                      }
+                    >
+                      CEO's Message
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+              
               <NavLink
                 to="/products"
                 className={({ isActive }) =>
@@ -109,7 +148,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                Blog & News
+                News
               </NavLink>
               <NavLink
                 to="/careers"
@@ -181,17 +220,29 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/about"
-            onClick={handleLinkClick}
-            className={({ isActive }) =>
-              `text-left py-4 text-[18px] font-medium ${
-                isActive ? "text-[#E25319]" : "text-[#001D0D] hover:text-[#E25319]"
-              }`
-            }
-          >
-            About Us
-          </NavLink>
+          
+          {/* About Us Section */}
+          <div className="py-4">
+            <button 
+              onClick={() => setExpandedSection(expandedSection === 'about' ? '' : 'about')}
+              className="flex items-center justify-between w-full text-[18px] font-medium text-[#001D0D]"
+            >
+              <span>About Us</span>
+              <svg className={`w-4 h-4 transition-transform ${expandedSection === 'about' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {expandedSection === 'about' && (
+              <div className="ml-4 mt-2 space-y-2">
+                <NavLink to="/about" className="block py-2 text-[16px]" onClick={handleLinkClick}>Company Profile</NavLink>
+                <NavLink to="/about/values" className="block py-2 text-[16px]" onClick={handleLinkClick}>Our Core Values</NavLink>
+                <NavLink to="/about/purpose" className="block py-2 text-[16px]" onClick={handleLinkClick}>Our Purpose</NavLink>
+                <NavLink to="/about/ceo-message" className="block py-2 text-[16px]" onClick={handleLinkClick}>CEO's Message</NavLink>
+              </div>
+            )}
+          </div>
+          
           <NavLink
             to="/products"
             onClick={handleLinkClick}
@@ -234,7 +285,7 @@ const Navbar = () => {
               }`
             }
           >
-            Blog & News
+          News
           </NavLink>
           <NavLink
             to="/careers"

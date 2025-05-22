@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import HomePage from './pages/home'
 import AboutPage from './pages/about'
+import Values from './pages/about/Values'
+import Purpose from './pages/about/Purpose'
+import CeoMessage from './pages/about/CeoMessage'
 import ProductsPage from './pages/products'
 import ProjectsPage from './pages/projects'
 import QualityAssurancePage from './pages/quality-assurance'
@@ -23,6 +26,9 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/about/values" element={<Values />} />
+        <Route path="/about/purpose" element={<Purpose />} />
+        <Route path="/about/ceo-message" element={<CeoMessage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/quality-assurance" element={<QualityAssurancePage />} />

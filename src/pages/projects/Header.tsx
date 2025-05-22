@@ -10,7 +10,7 @@ const ProductsHeader = () => {
         <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] mb-4 leading-tight md:leading-[50px] md:mb-[20px]">
           Projects That Power Progress Across Africa
         </h1>
-        <p className="text-sm md:text-[14px] text-[#001D0D] md:max-w-[766px] md:leading-[30px]">
+        <p className="text-sm md:text-[16px] text-[#001D0D] md:max-w-[766px] md:leading-[30px]">
           MicCom Cables and Wires Ltd has been engaged in the manufacturing and
           supply of cables and wires for various projects across Nigeria and
           Africa as whole. Here are just some of the projects;

@@ -139,7 +139,7 @@ const ContactInformationComponent = () => {
                     id="message"
                     name="message"
                     rows={4}
-                    className="w-full border-b placeholder-[#001D0D] text-[#001D0D] border-[#001D0D] pb-1 bg-transparent focus:outline-none focus:border-green-500"
+                    className="w-full border-b placeholder-[#001D0D] text-[#001D0D] border-[#001D0D] pb-1 text-[16px] bg-transparent focus:outline-none focus:border-green-500"
                   ></textarea>
                 </div>
               </div>

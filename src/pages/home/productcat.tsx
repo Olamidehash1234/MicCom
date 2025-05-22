@@ -190,7 +190,7 @@ const ProductCategory: React.FC = () => {
                     <h3 className="text-xl md:text-[24px] font-medium mb-4 md:leading-[40px]">
                       {product.title}
                     </h3>
-                    <p className="mb-6 md:mb-[50px] text-[14px] md:text-[14px] opacity-100 md:leading-[30px] font-normal">
+                    <p className="mb-6 md:mb-[50px] text-[14px] md:text-[16px] opacity-100 md:leading-[30px] font-normal">
                       {product.description}
                     </p>
 

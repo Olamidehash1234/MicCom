@@ -310,17 +310,17 @@ export default function ProductsAccordion(){
                 <table className="w-full">
                   <thead>
                     <tr className="border-b border-[#0000004D] md:max-w-[1800px]">
-                      <th className="text-left pb-[20px] px-4 text-sm font-medium text-[#001D0D] w-[30%]">Product</th>
-                      <th className="text-center pb-[20px] px-4 text-sm font-medium text-[#001D0D] w-[30%]">Type</th>
-                      <th className="text-left pb-[20px] px-4 text-sm font-medium text-[#001D0D] w-[40%]">Application</th>
+                      <th className="text-left pb-[20px] px-4 md:text-[16px] text-sm font-medium text-[#001D0D] w-[30%]">Product</th>
+                      <th className="text-center pb-[20px] px-4 text-sm font-medium text-[#001D0D] w-[30%] md:text-[16px]">Type</th>
+                      <th className="text-left pb-[20px] md:text-[16px] px-4 text-sm font-medium text-[#001D0D] w-[40%]">Application</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-[#0000004D] justify-between md:text-justify">
                     {section.products.map((item, index) => (
                       <tr key={index}>
-                        <td className="py-6 px-4 md:py-[10px] text-sm text-[#001D0D] w-[30%]">{item.product}</td>
-                        <td className="py-6 md:py-[10px] px-4 text-sm text-center text-[#001D0D] w-[30%] ">{item.type}</td>
-                        <td className="py-6 md:py-[10px] px-4 text-sm text-[#001D0D] w-[40%]">{item.application}</td>
+                        <td className="py-6 px-4 md:py-[10px] md:text-[14px] text-sm text-[#001D0D] w-[30%]">{item.product}</td>
+                        <td className="py-6 md:py-[10px] px-4 text-sm md:text-[14px] text-center text-[#001D0D] w-[30%] ">{item.type}</td>
+                        <td className="py-6 md:py-[10px] px-4 text-sm text-[#001D0D] md:text-[14px] w-[40%]">{item.application}</td>
                       </tr>
                     ))}
                   </tbody>

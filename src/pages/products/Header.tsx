@@ -8,7 +8,7 @@ const ProductsHeader = () => {
         <h1 className="text-[24px] md:text-[40px] font-medium text-[#001D0D] mb-4 leading-tight md:leading-[50px] md:mb-[20px]">
           Products That Drive Innovation Across Africa
         </h1>
-        <p className="text-sm md:text-[14px] text-[#001D0D] md:max-w-[766px] md:leading-[30px]">
+        <p className="text-sm md:text-[16px] text-[#001D0D] md:max-w-[780px] md:leading-[30px]">
           Please find below, our list of products. Our product listing changes every year to accommodate new innovation from our 
           manufacturing department. Feel free to bookmark this page and check often for updates!
         </p>

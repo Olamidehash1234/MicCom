@@ -1,3 +1,5 @@
+import SubpageHero from "../../components/SubpageHero";
+
 export default function CoreValues() {
   const coreValues = [
     {
@@ -49,7 +51,8 @@ export default function CoreValues() {
 
   return (
     <div>
-      <div className="px-4 py-8 md:px-[80px] md:pt-[0px] md:pb-[60px]">
+      <SubpageHero title="Our Core Values" />
+      <div className="px-4 py-8 md:px-[80px] md:pt-[60px] md:pb-[60px]">
         {/* Header */}
         <div className="mb-6 text-justify">
           <p className="text-[#E25319] md:text-[16px] md:leading-[30px] font-medium text-sm mb-2">
@@ -58,7 +61,7 @@ export default function CoreValues() {
           <h1 className="text-2xl md:leading-[50px] md:text-[40px] font-medium text-[#001D0D] mb-4">
             The Principles That Power Our Purpose
           </h1>
-          <p className="text-[#001D0D] text-sm md:text-[14px] md:leading-[30px]">
+          <p className="text-[#001D0D] text-sm md:text-[16px] md:leading-[30px]">
             At MicCom Cables & Wires Ltd, our core values are more than
             words—they're the foundation of how we work, serve, and grow. They
             guide our decisions, shape our culture, and ensure that we
@@ -78,7 +81,7 @@ export default function CoreValues() {
               <h3 className="font-medium text-[#001D0D] md:text-[18px] mb-2 md:leading-[30px]">
                 {value.title}
               </h3>
-              <p className="text-[#001D0D] text-justify text-sm md:text-[14px] md:leading-[24px]">
+              <p className="text-[#001D0D] text-justify text-sm md:text-[16px] md:leading-[24px]">
                 {value.description}
               </p>
             </div>
@@ -86,7 +89,6 @@ export default function CoreValues() {
         </div>
 
         {/* <div className="w-full h-px bg-[#004820] mt-12 md:mt-[80px] mb-4"></div> */}
-
       </div>
     </div>
   );
