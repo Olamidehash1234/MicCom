@@ -43,7 +43,11 @@ const Navbar = () => {
                 <img
                   src="/icons/miccom.svg"
                   alt="MicCom Logo"
-                  className="w-[80px] md:w-[109.409px] md:h-[83px]"
+                  className={`transition-all duration-300 w-[80px] ${
+                    isScrolled 
+                      ? 'md:w-[109.409px] md:h-[83px]' 
+                      : 'md:w-[150px] md:h-[120px]'
+                  }`}
                 />
               </a>
             </div>
