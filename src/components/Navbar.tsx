@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,9 +80,19 @@ const Navbar = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 pt-2 md:pt-[40px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <div className="w-[300px] bg-white shadow-lg py-2 rounded-md">
                     <NavLink 
-                      to="/about" 
+                      to="/about/ceo-message" 
                       className={({ isActive }) =>
                         `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
+                      }
+                    >
+                      CEO's Message
+                    </NavLink>
+                    <NavLink 
+                      to="/about" 
+                      className={({ isActive }) =>
+                        `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${
+                          isActive && location.pathname === '/about' ? "text-[#E25319]" : "text-[#001D0D]"
+                        }`
                       }
                     >
                       Company Profile
@@ -95,20 +106,20 @@ const Navbar = () => {
                       Our Core Values
                     </NavLink>
                     <NavLink 
-                      to="/about/purpose" 
+                      to="/social-responsibilities" 
                       className={({ isActive }) =>
                         `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
                       }
                     >
-                      Our Purpose
+                      Social Responsibilities
                     </NavLink>
                     <NavLink 
-                      to="/about/ceo-message" 
+                      to="/awards" 
                       className={({ isActive }) =>
                         `block px-6 py-3 hover:bg-[#E25319] hover:text-[#fff] ${isActive ? "text-[#E25319]" : "text-[#001D0D]"}`
                       }
                     >
-                      CEO's Message
+                      Awards & Certificates
                     </NavLink>
                   </div>
                 </div>
@@ -239,10 +250,21 @@ const Navbar = () => {
             
             {expandedSection === 'about' && (
               <div className="ml-4 mt-2 space-y-2">
-                <NavLink to="/about" className="block py-2 text-[16px]" onClick={handleLinkClick}>Company Profile</NavLink>
-                <NavLink to="/about/values" className="block py-2 text-[16px]" onClick={handleLinkClick}>Our Core Values</NavLink>
-                <NavLink to="/about/purpose" className="block py-2 text-[16px]" onClick={handleLinkClick}>Our Purpose</NavLink>
                 <NavLink to="/about/ceo-message" className="block py-2 text-[16px]" onClick={handleLinkClick}>CEO's Message</NavLink>
+                <NavLink 
+                  to="/about" 
+                  className={({ isActive }) =>
+                    `block py-2 text-[16px] ${
+                      isActive && location.pathname === '/about' ? "text-[#E25319]" : "text-[#001D0D]"
+                    }`
+                  } 
+                  onClick={handleLinkClick}
+                >
+                  Company Profile
+                </NavLink>
+                <NavLink to="/about/values" className="block py-2 text-[16px]" onClick={handleLinkClick}>Our Core Values</NavLink>
+                <NavLink to="/social-responsibilities" className="block py-2 text-[16px]" onClick={handleLinkClick}>Social Responsibilities</NavLink>
+                <NavLink to="/awards" className="block py-2 text-[16px]" onClick={handleLinkClick}>Awards & Certificates</NavLink>
               </div>
             )}
           </div>
