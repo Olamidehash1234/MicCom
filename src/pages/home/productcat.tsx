@@ -23,7 +23,7 @@ const ProductCategory: React.FC = () => {
       description:
         "MicCom’s All Copper Conductor cables are engineered for superior conductivity, durability, and resistance to corrosion. Ideal for residential, commercial, and industrial applications, these cables ensure efficient power transmission with minimal energy loss. Made from 99.9% pure copper, they deliver exceptional performance in both low and medium-voltage installations.",
       buttonText: "Learn more",
-      image: "/images/Home/copper.png",
+      image: "/images/Home/copper.jpeg",
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const ProductCategory: React.FC = () => {
       description:
         "Lightweight, corrosion-resistant, and cost-effective, our All Aluminum Conductors are ideal for overhead power lines and transmission applications. These conductors are especially effective in coastal or high-corrosion environments, delivering strong conductivity and ease of handling while maintaining structural integrity.",
       buttonText: "Learn more",
-      image: "/images/Home/AAC.png",
+      image: "/images/Home/AAC.jpeg",
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const ProductCategory: React.FC = () => {
       description:
         "From underground systems to industrial installations, our Armoured and Non-Armoured Cables offer unmatched protection and performance. Armoured options provide enhanced mechanical protection against physical stress, while non-armoured variants serve well in controlled environments. Both types are built to handle harsh conditions and support reliable power delivery.",
       buttonText: "Learn more",
-      image: "/images/Home/armoured.png",
+      image: "/images/Home/armoured.jpeg",
     },
   ];
 

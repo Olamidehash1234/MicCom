@@ -6,7 +6,7 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      imageUrl: "/images/Home/hero1.png",
+      imageUrl: "/images/Home/hero1.jpg",
       title: "Built to International Standards, Made for Africa",
       description:
         "Since 1978, MicCom Cables & Wires Ltd has been a trailblazer in the Nigerian manufacturing industry—delivering top-quality electrical cables and wires designed to meet both local and international standards.",
@@ -20,10 +20,17 @@ const Hero = () => {
     },
     {
       id: 3,
-      imageUrl: "/images/Home/hero3.png",
+      imageUrl: "/images/Home/hero3.jpg",
       title: "Providing Trusted Cable Solutions Since 1978",
       description:
         "Trusted for over four decades to deliver high-quality cable solutions. From homes to high-rise buildings and national infrastructure, we have been powering progress across the continent with unmatched expertise and innovation.",
+    },
+    {
+      id: 4,
+      imageUrl: "/images/Home/hero4.jpg",
+      title: "Quality That Powers Progress",
+      description:
+        "Our commitment to excellence is reflected in every meter of cable we produce. With ISO certifications and rigorous quality controls, we ensure that our products not only meet but exceed industry standards for safety and performance.",
     },
   ];
 
