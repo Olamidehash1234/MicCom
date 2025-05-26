@@ -32,7 +32,7 @@ const ProductCategory: React.FC = () => {
       description:
         "Whether you need single-core or multi-core cables, MicCom offers robust solutions designed to meet diverse wiring needs. Our Single & Multiple Cables are suitable for internal wiring, control panels, and power distribution—offering flexibility, easy installation, and long-term reliability in every spool.",
       buttonText: "Learn more",
-      image: "/images/Home/wiring-cables.png",
+      image: "/images/Home/flat.jpeg",
     },
     {
       id: 3,

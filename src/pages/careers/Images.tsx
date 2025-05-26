@@ -26,9 +26,9 @@ export default function CareerCards() {
     {
       text: "Learn more about our strategic partnership with tertiary institutions",
     },
-    {
-      text: "Learn more about our Graduate training programmes",
-    },
+    // {
+    //   text: "Learn more about our Graduate training programmes",
+    // },
     {
       text: "Learn more about our Students Internship programmes",
     },
