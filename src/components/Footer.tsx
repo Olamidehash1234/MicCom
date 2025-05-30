@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/products#acsr" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
-                  ACSR
+                  All Aluminium Conductor Steel Reinforced (ACSR)
                 </a>
               </li>
             </ul>

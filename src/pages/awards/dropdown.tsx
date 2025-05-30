@@ -67,11 +67,15 @@ export default function AwardsAccordion() {
         {
           main: "DPR Permit to Operate As An Oil Industry Service Company:",
           subItems: [
-            "Specialized Category – DPR/OGISP/20/3398417/N187456 ",
-            "Major Category – DPR/OGISP/20/2672814/N188157",
+            "Specialized Category",
+            "Major Category",
           ],
         },
         "Nigerian Content Equipment Certificate (NCEC)",
+        "Nigerian Oil and Gas Industry Content Joint Qualification System (NOGICJQS) Registration Certificate",
+        "Nigerian Petroleum Exchange (NIPEX) Certificate",
+        "Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA) Certificate",
+        "Nigerian Upstream Petroleum Regulatory Commission (NUPRC) Certificate"
       ],
     },
   ];
@@ -107,7 +111,7 @@ export default function AwardsAccordion() {
                   {section.items.map((item, index) => (
                     <div key={index}>
                       {typeof item === "string" ? (
-                        <div className="flex text-sm md:text-base md:max-w-[550px] md:leading-[26px]">
+                        <div className="flex text-sm md:text-base md:max-w-[750px] md:leading-[26px]">
                           <div>•</div>
                           <div className="pl-[10px]">{item}</div>
                         </div>

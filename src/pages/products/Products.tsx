@@ -42,7 +42,7 @@ export default function ProductsAccordion(){
   const productData: ProductSection[] = [
     {
       id: 'copper',
-      title: '1.  All Copper Conductor',
+      title: '1.  All Copper Products',
       products: [
         {
           product: 'Copper Overhead Line (Stranded)',
@@ -130,6 +130,16 @@ export default function ProductsAccordion(){
             type: 'NCYY 5- Core',
             application: 'For indoor eletrical installation'
           },
+          {
+            product: 'PVC Insulated Consumer Connection -Aluminum Cables 0.6/1kv',
+            type: 'NAY',
+            application: 'For use in housing, offices and general installation'
+          },
+          {
+            product: 'PVC Insulated and sheathed single core- Aluminum consumer connections cables 0.6/1kv',
+            type: 'NAYY',
+            application: 'For housing, offices and for laying underground with additional protection (where likely mechanical damage is possible). Also used in switch and distribution boards.'
+          },
         ]
       },
       {
@@ -140,16 +150,6 @@ export default function ProductsAccordion(){
             product: 'Aluminum Overhead Line (Conductor)',
             type: 'AOHL',
             application: 'For use in low voltage lines (sometimes up to 66KV) and also as flexible busbar connections in High Voltage sub-stations.'
-          },
-          {
-            product: 'PVC Insulated Consumer Connection -Aluminum Cables 0.6/1kv',
-            type: 'NAY',
-            application: 'For use in housing, offices and general installation'
-          },
-          {
-            product: 'PVC Insulated and sheathed single core- Aluminum consumer connections cables 0.6/1kv',
-            type: 'NAYY',
-            application: 'For housing, offices and for laying underground with additional protection (where likely mechanical damage is possible). Also used in switch and distribution boards.'
           },
         ]
       },
