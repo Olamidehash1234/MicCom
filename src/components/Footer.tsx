@@ -65,7 +65,7 @@ export default function Footer() {
             <ul className="space-y-[14px]">
               <li>
                 <a href="/products#copper" className="hover:text-[#E25319] text-[#001D0D]  text-[14px]">
-                  All Copper Conductor
+                  All Copper Conductor (ACC)
                 </a>
               </li>
               <li>
@@ -78,7 +78,7 @@ export default function Footer() {
                   href="/products#aluminum"
                   className="hover:text-[#E25319] text-[#001D0D]  text-[14px]"
                 >
-                  All Aluminum Conductor
+                  All Aluminum Conductor (AAC)
                 </a>
               </li>
               <li>
