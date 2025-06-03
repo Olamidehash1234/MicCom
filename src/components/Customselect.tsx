@@ -1,26 +1,26 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
-interface CustomSelectProps {
-  options: { value: string; label: string }[]; // Dropdown options
-  value: string;
-  onChange: (value: string) => void;
+interface CustomSelectProps<T extends string> {
+  options: { value: T; label: string }[]; // Dropdown options
+  value: T;
+  onChange: (value: T) => void;
   placeholder?: string;
   error?: string; // Error message for validation
 }
 
-const CustomSelectReUse: React.FC<CustomSelectProps> = ({
+const CustomSelectReUse = <T extends string>({
   options,
   value,
   onChange,
   placeholder = "Select an option",
   error,
-}) => {
+}: CustomSelectProps<T>) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef<HTMLDivElement>(null);
 
   const toggleDropdown = () => setIsOpen((prev) => !prev);
 
-  const handleOptionClick = (selectedValue: string) => {
+  const handleOptionClick = (selectedValue: T) => {
     onChange(selectedValue);
     setIsOpen(false);
   };
